@@ -1,0 +1,20 @@
+.mscv_header{
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 140px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .nav-list{
+        padding-left: 0;
+        list-style-type: none;
+        color: white;
+    }
+
+    div.collapse.show#navbarToggleExternalContent
+    div.bg-dark.p-4{
+        padding: 0.5rem 1.5rem!important;
+    }
+}
