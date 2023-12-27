@@ -1,20 +1,43 @@
-.mscv_header{
-    display: flex;
-    flex-direction: column-reverse;
-    min-width: 140px;
+body{
+    transition: background-color 1s;
+}
 
-    position: absolute;
+.sidenav{
+    height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
+    background-color: #111;
+    transition: 1s;
+    width: 0;
+    position: fixed;
     top: 0;
     right: 0;
+    padding-top: 20px;
 
-    .nav-list{
-        padding-left: 0;
-        list-style-type: none;
-        color: white;
+    a{
+        transition: 0.3s;
+        display: block;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
     }
 
-    
-    .bg-dark.p-4{
-        padding: 0.5rem 1.5rem!important;
+    .sidebar-content{
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+}
+
+    a:hover{
+        color: #f1f1f1;
+    }
+}
+
+#main{
+    transition: margin-right 1s;
+    padding: 16px;
+
+    .openBtn{
+        font-size: 30px;
+        cursor:pointer
     }
 }

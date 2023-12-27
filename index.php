@@ -1,7 +1,9 @@
 <?php
     include("header.php");
 ?>
-    body
+<?php
+    include("body.php");
+?>
 <?php
     include("footer.php");
 ?>
