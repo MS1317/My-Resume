@@ -2,6 +2,10 @@ body{
     transition: background-color 1s;
 }
 
+.main-body{
+    /* background-color: #111!important; */
+}
+
 .sidenav{
     height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
     background-color: #111;
@@ -11,6 +15,7 @@ body{
     top: 0;
     right: 0;
     padding-top: 20px;
+    z-index: 9999;
 
     .sidebar-content{
         padding: 0px 15px;
@@ -38,7 +43,76 @@ body{
     padding: 16px;
 
     .openBtn{
+        color: #818181;
         font-size: 30px;
-        cursor:pointer
+        cursor:pointer;
+        position: relative;
+    }
+
+    .col-md-3,.col-md-12{
+        border: 1px solid;
+    }
+
+    .col-md-12{
+        overflow: hidden;
+        color: #f1f1f1;
+        padding:0px;
+    }
+
+    .intro-sec{
+        background-size: cover;
+        background-image: url("../assets/images/bg.jpg");
+        background-position: 500px;
+        position: relative;
+    }
+
+    .intro-overlay{
+        padding: 50px 0px;
+        background-image:linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%);
+    }
+
+    .hero-sec{
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/bg.jpg");
+    }
+
+    .hero-img{
+        position: absolute;
+        top: 4.2%;
+        right: 0%;
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-overlay{
+        background-image: linear-gradient(90deg,rgba(45,45,58,.9) 15%,rgba(45,45,58,.7) 50%,rgba(43,43,53,.7) 100%);
+    }
+
+    .hero-content{
+        max-width: 672px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 100px;
+        max-height: 300px;
+        min-height: 300px;
+
+        .hero-head{
+            margin-bottom: 15px;
+            font-size: 42px;
+            font-weight: 800;
+        }
+
+        .hero-btn{
+            max-width: fit-content;
+            text-transform: uppercase;
+            height: 45px;
+            font-size: 12px;
+            padding: 0 35px;
+            background-color: red;
+            color:white
+        }
     }
 }

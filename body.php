@@ -11,8 +11,31 @@
 </div>
 
 <div id="main">
-    <span class="openBtn" style="cursor:pointer" onclick="openNav()">
+    <span class="openBtn" onclick="openNav()">
         &#9776;
     </span><br>
-    Hey there see this text collapse and going back to normal again with opening and closing of sidebar
+<section class="row flex-row">
+    <!-- <div class="col-md-3">
+        dfngjkvmbmxcvlmbl
+    </div> -->
+    <div class="col-md-12">
+        <section class="intro-sec">
+            <div class="intro-overlay">
+                <div class="hero-sec">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                        <h1 class="hero-head">Discover my amazing workspace</h1>
+                        <button class="hero-btn">
+                            <strong>
+                                Explore
+                            </strong>
+                        </button>
+                        <img class="hero-img" src="assets\images\IMG_20210222_135640_Bokeh.png" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
 </div>
