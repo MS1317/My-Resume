@@ -3,12 +3,16 @@ body{
 }
 
 .main-body{
-    /* background-color: #111!important; */
+    background-color: #191923!important;
+}
+
+.side-navbar{
+    background-color: #20202a;
 }
 
 .sidenav{
     height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
-    background-color: #111;
+    background-color: #20202a;
     transition: 1s;
     width: 0;
     position: fixed;
@@ -38,22 +42,36 @@ body{
     color: #f1f1f1;
 }
 
+.side-navbar{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    /* border: red 1px solid; */
+    width:100%;
+    max-width: 50px;
+}
+.openBtn{
+    background-color: #23232d;
+    color: #818181;
+    font-size: 30px;
+    cursor:pointer;
+   
+}
+
 #main{
     transition: margin-right 1s;
-    padding: 16px;
 
-    .openBtn{
-        color: #818181;
-        font-size: 30px;
-        cursor:pointer;
-        position: relative;
+    .sidenavbar{
+        text-align: center;
     }
 
     .col-md-3,.col-md-12{
-        border: 1px solid;
+        /* border: 1px solid; */
     }
 
-    .col-md-12{
+    .intro-sec{
         overflow: hidden;
         color: #f1f1f1;
         padding:0px;
@@ -72,6 +90,7 @@ body{
     }
 
     .hero-sec{
+        background-size: cover;
         background-repeat: no-repeat;
         background-image: url("../assets/images/bg.jpg");
     }
@@ -112,6 +131,7 @@ body{
             font-size: 12px;
             padding: 0 35px;
             background-color: red;
+            border: none;
             color:white
         }
     }

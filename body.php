@@ -1,21 +1,9 @@
-<div id="mySidenav" class="sidenav">
-    <div class="sidebar-content">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            &times
-        </a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
+<div class="side-navbar h-100">
+    <span class="openBtn" onclick="openNav()">&#9776;</span>
 </div>
 
-<div id="main">
-    <span class="openBtn" onclick="openNav()">
-        &#9776;
-    </span><br>
-<section class="row flex-row">
-    <!-- <div class="col-md-3">
+<section id="main" >
+    <!-- <div class="col-md-2">
         dfngjkvmbmxcvlmbl
     </div> -->
     <div class="col-md-12">
@@ -38,4 +26,15 @@
         </section>
     </div>
 </section>
+
+<div id="mySidenav" class="sidenav">
+    <div class="sidebar-content">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times
+        </a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 </div>
