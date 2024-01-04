@@ -37,6 +37,10 @@ body{
     color: #818181;
 }
 
+.side-navbar.mw-100{
+    display: none;
+}
+
 
 .sidenav a:hover{
     color: #f1f1f1;
@@ -90,14 +94,17 @@ body{
     }
 
     .hero-sec{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url("../assets/images/bg.jpg");
+        background-image: url("../assets/images/bg.jpg");   
     }
 
     .hero-img{
         position: absolute;
-        top: 4.2%;
+        top: -5.8%;
         right: 0%;
         max-width: 250px;
         width: 100%;
@@ -105,6 +112,7 @@ body{
     }
 
     .hero-overlay{
+        position: relative;
         background-image: linear-gradient(90deg,rgba(45,45,58,.9) 15%,rgba(45,45,58,.7) 50%,rgba(43,43,53,.7) 100%);
     }
 

@@ -2,10 +2,11 @@
     <span class="openBtn" onclick="openNav()">&#9776;</span>
 </div>
 
+<div class="side-navbar mw-100">
+    <span class="openBtn" onclick="openNav()">&#9776;</span>
+</div>
+
 <section id="main" >
-    <!-- <div class="col-md-2">
-        dfngjkvmbmxcvlmbl
-    </div> -->
     <div class="col-md-12">
         <section class="intro-sec">
             <div class="intro-overlay">
@@ -18,7 +19,7 @@
                                 Explore
                             </strong>
                         </button>
-                        <img class="hero-img" src="assets\images\IMG_20210222_135640_Bokeh.png" >
+                        <img class="hero-img" src="assets\images\untitled-1.png" >
                         </div>
                     </div>
                 </div>

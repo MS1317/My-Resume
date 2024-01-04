@@ -47,6 +47,17 @@
     }
 }
 
+@media (max-width:600px){
+    .hero-content{
+    padding: 50px 0px!important;
+    text-align: center;
+    .hero-btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    }
+}
+
 @media (min-width:601px) and (max-width:830px)
 {
     .intro-sec
@@ -70,5 +81,25 @@
     .hero-content
     .hero-head{
         font-size: 32px!important;
+    }
+}
+
+@media (max-width:969px){
+    .side-navbar.h-100{
+        display: none;
+        position: sticky;
+    }
+
+    .side-navbar.mw-100{
+        text-align: end;
+        display: block;
+    }
+
+    .openBtn{
+        margin-right: 10px;
+    }
+
+    .intro-overlay{
+        padding: 90px 0px!important;
     }
 }
