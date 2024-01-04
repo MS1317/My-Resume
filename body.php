@@ -19,7 +19,7 @@
                                 Explore
                             </strong>
                         </button>
-                        <img class="hero-img" src="assets/images/untitled-1.png" >
+                        <img class="hero-img" src="assets/images/Untitled-1.png" >
                         </div>
                     </div>
                 </div>
