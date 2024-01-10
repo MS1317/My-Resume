@@ -72,6 +72,27 @@
 }
 }
 
+@media (max-width:969px)
+{
+    .side-profile-btn{
+        display: block;
+    }
+
+    .side-profile{
+        width:0;
+    }
+
+    .side-details{
+        width: 0;
+        overflow: hidden;
+    }
+
+    .side-details-2{
+        width: 0;
+        overflow: hidden;
+    }
+}
+
 @media (min-width:830px) and (max-width:982px)
 {
     .intro-sec
@@ -93,6 +114,8 @@
     .side-navbar.mw-100{
         text-align: end;
         display: block;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .openBtn{

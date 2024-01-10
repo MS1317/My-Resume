@@ -6,5 +6,6 @@
 
 <!-- Custom JS -->
 <script src="js\sidebar.js"></script>
+<script src="js\sideprofile.js"></script>
 </body>
 </html>
