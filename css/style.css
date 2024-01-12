@@ -30,7 +30,7 @@ body{
 }
 
 .sidenav a{
-    transition: 0.3s;
+    /* transition: 0.3s; */
     display: block;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -151,18 +151,22 @@ body{
 
 /* Profile*/
 .side-profile {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    transition: 1s;
     /* border: 1px solid white; */
     z-index: 99999;
     background-color: #20202a;
     color: white;
     overflow: hidden;
-    width: 25%;
+    width: 100%;
+    max-width: 250px;
 }
+
+.details{position: absolute;}
 
 .side-profile-btn{
     display: none;
@@ -180,11 +184,10 @@ body{
     align-items: center;
     flex-wrap: nowrap;
     background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
-    width: 250px;
 }
 
 .side-details-2{
-    width: 250px;
+
 }
 
 .name-title h6{
@@ -193,8 +196,6 @@ body{
 
 .me{
     max-width: 120px;
-    width: 100%;
-    height: auto;
     border-radius: 100%;
 }
 
@@ -206,6 +207,7 @@ body{
     list-style-type: none;
     color: #8c8c8e;
     font-weight: 200;
+    text-wrap: nowrap;
 }
 
 .designation-list li{
@@ -222,7 +224,6 @@ table{
     margin: 0 auto;
     max-width: 300px;
     text-align: center;
-    width: 100%;
 }
 td.details-head {
     font-weight: 600;

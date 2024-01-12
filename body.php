@@ -32,7 +32,11 @@
 
 <!-- Side Profile -->
 <aside id="mySideProfile" class="side-profile">
-    <div id="sideDetails1" class="side-details">
+<a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">
+            &times
+        </a>
+        <div class="details">
+        <div id="sideDetails1" class="side-details">
         <img class="me" src="assets\images\IMG_20240105_222611_375.jpg" alt="img">
         <div class="name-title">
             <strong>
@@ -42,9 +46,9 @@
         <div class="designation">
             <ul class="p-1 designation-list">
                 <li>Frontend Developer,</li>
-                <li>React JS,</li>
+                <li>React JS,</li><br>
                 <li>Wordpress,</li>
-                <li>TechiTuber CEO</li>
+                <li>TechiTuber CEO</li><br>
             </ul>
         </div>
     </div>
@@ -52,7 +56,7 @@
     <div id="sideDetails2" class="side-details-2">
         <table>
             <tr>
-                <td colspan=3 class="details-head">
+                <td colspan=5 class="details-head">
                     Residence:
                 </td>
                 <td class="details-data">
@@ -61,7 +65,7 @@
             </tr>
 
             <tr>
-                <td colspan=3 class="details-head">
+                <td colspan=5 class="details-head">
                     City:
                 </td>
                 <td class="details-data">
@@ -70,7 +74,7 @@
             </tr>
 
             <tr>
-                <td colspan=3 class="details-head">
+                <td colspan=5 class="details-head">
                     Age:
                 </td>
 
@@ -80,6 +84,7 @@
             </tr>
         </table>
     </div>
+        </div>
 </aside>
 
 <!-- The side navigation menu -->

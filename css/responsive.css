@@ -79,17 +79,21 @@
     }
 
     .side-profile{
+        transition: 1s;
         width:0;
     }
 
     .side-details{
-        width: 0;
         overflow: hidden;
     }
 
     .side-details-2{
-        width: 0;
         overflow: hidden;
+    }
+}
+
+@media (min-width:970px){
+    .side-profile{
     }
 }
 
