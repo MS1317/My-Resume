@@ -6,12 +6,14 @@ body{
     background-color: #191923!important;
 }
 
+
 /* Sidenav */
 .side-navbar{
     background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
 }
 
 .sidenav{
+    box-shadow: 1px 0px 5px black;
     height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
     background-color: #20202a;
     transition: 1s;
@@ -42,7 +44,6 @@ body{
     display: none;
 }
 
-
 .sidenav a:hover{
     color: #f1f1f1;
 }
@@ -60,7 +61,6 @@ body{
     align-items: center;
 }
 .openBtn{
-    background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
     color: #818181;
     font-size: 30px;
     cursor:pointer;
@@ -74,9 +74,10 @@ body{
 
 }
 
+
 /* Hero Section */
 #main{
-    transition: margin-right 1s;
+    transition: margin-right 1s,margin-left 1s;
 
     .intro-sec{
         overflow: hidden;
@@ -97,8 +98,8 @@ body{
     }
 
     .hero-sec{
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 75px;
+        margin-left: 265px;
         max-width: 95%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -149,30 +150,45 @@ body{
     }
 }
 
+
 /* Profile*/
 .side-profile {
+    background-color: #20202a;
     display: flex;
     flex-direction: column;
+    box-shadow: 1px 0px 5px black;
+    min-height: 480px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     /* border: 1px solid white; */
     z-index: 99999;
-    background-color: #20202a;
     color: white;
     overflow: hidden;
     width: 100%;
     max-width: 250px;
 }
 
-.details{position: absolute;}
+#mySideProfile{
+    .closebtn{
+    transition: 0.3s;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    }
+}
 
 .side-profile-btn{
-    display: none;
     color: #818181;
     margin-left: 10px;
     
+}
+
+#mySideProfile .closebtn{
+    display: none;
 }
 
 .side-details{
@@ -183,14 +199,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
-}
-
-.side-details-2{
-
 }
 
 .name-title h6{
+    text-wrap: nowrap;
     font-weight: unset;
 }
 
@@ -206,7 +218,7 @@ body{
 .designation-list{
     list-style-type: none;
     color: #8c8c8e;
-    font-weight: 200;
+    /* font-weight: 200; */
     text-wrap: nowrap;
 }
 
@@ -225,10 +237,20 @@ table{
     max-width: 300px;
     text-align: center;
 }
+
 td.details-head {
     font-weight: 600;
 }
 
 .details-data{
     color: #8c8c8e;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+ img{
+    width: 100%;
+    max-width: 35px;
+}
 }

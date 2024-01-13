@@ -3,8 +3,8 @@
 </div>
 
 <div class="side-navbar mw-100 d-flex">
-    <i class="side-profile-btn fas fa-ellipsis-v" onclick="openSideProfile()"></i>
-    <span class="openBtn" onclick="openNav()">&#9776;</span>
+    <i id="sideProfileBtn"class="side-profile-btn fas fa-ellipsis-v" onclick="openSideProfile()"></i>
+    <span id="navBtn" class="openBtn" onclick="openNav()">&#9776;</span>
 </div>
 
 <!-- Hero  Section -->
@@ -32,26 +32,38 @@
 
 <!-- Side Profile -->
 <aside id="mySideProfile" class="side-profile">
-<a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">
-            &times
-        </a>
-        <div class="details">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">&times</a>
         <div id="sideDetails1" class="side-details">
-        <img class="me" src="assets\images\IMG_20240105_222611_375.jpg" alt="img">
-        <div class="name-title">
-            <strong>
-                <h6>Manpreet Singh</h6>
-            </strong>
-        </div>
-        <div class="designation">
-            <ul class="p-1 designation-list">
-                <li>Frontend Developer,</li>
-                <li>React JS,</li><br>
-                <li>Wordpress,</li>
-                <li>TechiTuber CEO</li><br>
-            </ul>
-        </div>
-    </div>
+            <img class="me" src="assets\images\IMG_20240105_222611_375.jpg" alt="img">
+                <div class="name-title">
+                    <strong>
+                        <h6>Manpreet Singh</h6>
+                    </strong>
+                </div>
+            <div class="designation">
+                <ul class="p-1 designation-list">
+                    <div class="icon">
+                        <li>Frontend Developer</li>
+                        <img src="assets\icons\front-end.png">
+                    </div>
+
+                    <div class="icon">
+                        <li>React JS</li>
+                        <img src="assets\icons\structure.png">
+                    </div>
+
+                    <div class="icon">
+                        <li>Wordpress</li>
+                        <img src="assets\icons\Wordpress.png">
+                    </div>
+
+                    <div class="icon">
+                        <li><strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO</li>
+                        <img src="assets\icons\influencer.png">
+                    </div>
+                </ul>
+            </div>
+         </div>
 
     <div id="sideDetails2" class="side-details-2">
         <table>
@@ -84,15 +96,12 @@
             </tr>
         </table>
     </div>
-        </div>
 </aside>
 
 <!-- The side navigation menu -->
 <div id="mySidenav" class="sidenav">
     <div class="sidebar-content">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            &times
-        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>

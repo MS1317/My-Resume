@@ -74,7 +74,16 @@
 
 @media (max-width:969px)
 {
+    #main .hero-sec{
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+
     .side-profile-btn{
+        display: block;
+    }
+
+    #mySideProfile .closebtn {
         display: block;
     }
 
@@ -89,11 +98,6 @@
 
     .side-details-2{
         overflow: hidden;
-    }
-}
-
-@media (min-width:970px){
-    .side-profile{
     }
 }
 
@@ -128,5 +132,12 @@
 
     .intro-overlay{
         padding: 90px 0px!important;
+    }
+}
+
+@media (min-width:970px){
+    .side-profile{
+        max-width: 250px!important;
+        width: 100%!important;
     }
 }
