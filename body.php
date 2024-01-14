@@ -49,17 +49,17 @@
 
                     <div class="icon">
                         <li>React JS</li>
-                        <img src="assets\icons\structure.png">
+                        <img class="icon-img" src="assets\icons\structure.png">
                     </div>
 
                     <div class="icon">
                         <li>Wordpress</li>
-                        <img src="assets\icons\wordpress.png">
+                        <img class="icon-img" src="assets\icons\wordpress.png">
                     </div>
 
                     <div class="icon">
                         <li><strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO</li>
-                        <img src="assets\icons\influencer.png">
+                        <img class="icon-img" src="assets\icons\influencer.png">
                     </div>
                 </ul>
             </div>
