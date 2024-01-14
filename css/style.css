@@ -232,18 +232,21 @@ body{
 
 .side-details-2
 table{
+    overflow: auto;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
-    max-width: 300px;
+    width: 197.2px;
     text-align: center;
 }
 
 td.details-head {
+    float: left;
     font-weight: 600;
 }
 
 .details-data{
     color: #8c8c8e;
+    float: right;
 }
 
 .icon{
@@ -252,5 +255,9 @@ td.details-head {
  .icon-img{
     width: 100%;
     max-width: 35px;
+}
+.channel-link{
+    text-decoration: none;
+    color: #8c8c8e;
 }
 }

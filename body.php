@@ -58,7 +58,11 @@
                     </div>
 
                     <div class="icon">
-                        <li><strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO</li>
+                        <li>
+                            <a class="channel-link" href="http://www.youtube.com/@TechiTuber">
+                            <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO
+                            </a>
+                        </li>
                         <img class="icon-img" src="assets\icons\influencer.png">
                     </div>
                 </ul>
@@ -68,7 +72,7 @@
     <div id="sideDetails2" class="side-details-2">
         <table>
             <tr>
-                <td colspan=5 class="details-head">
+                <td class="details-head">
                     Residence:
                 </td>
                 <td class="details-data">
@@ -77,7 +81,7 @@
             </tr>
 
             <tr>
-                <td colspan=5 class="details-head">
+                <td   class="details-head">
                     City:
                 </td>
                 <td class="details-data">
@@ -86,7 +90,7 @@
             </tr>
 
             <tr>
-                <td colspan=5 class="details-head">
+                <td   class="details-head">
                     Age:
                 </td>
 
