@@ -44,7 +44,7 @@
                 <ul class="p-1 designation-list">
                     <div class="icon">
                         <li>Frontend Developer</li>
-                        <img src="assets\icons\front-end.png">
+                        <img class="icon-img" src="assets\icons\front-end.png">
                     </div>
 
                     <div class="icon">
@@ -54,7 +54,7 @@
 
                     <div class="icon">
                         <li>Wordpress</li>
-                        <img src="assets\icons\Wordpress.png">
+                        <img src="assets\icons\wordpress.png">
                     </div>
 
                     <div class="icon">
