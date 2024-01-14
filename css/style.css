@@ -249,7 +249,7 @@ td.details-head {
 .icon{
     display: flex;
     justify-content: space-between;
- img.icon-img{
+ .icon-img{
     width: 100%;
     max-width: 35px;
 }
