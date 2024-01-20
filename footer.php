@@ -7,5 +7,6 @@
 <!-- Custom JS -->
 <script src="js\sidebar.js"></script>
 <script src="js\sideprofile.js"></script>
+<script src="js\typeEffect.js"></script>
 </body>
 </html>

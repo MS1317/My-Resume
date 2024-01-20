@@ -16,6 +16,14 @@
                     <div class="hero-overlay">
                         <div class="hero-content">
                         <h1 class="hero-head">Discover my amazing workspace</h1>
+                        <div class="wrapper">
+                            <h6 class="effect-wrapper">
+                                I am
+                                <<span class="typed-text-tag">code</span>>
+                                <span id="typed"></span>
+                                <span class="cursor">&nbsp;</span>
+                                <<span class="typed-text-tag">/code</span>></h6>
+                        </div>
                         <button class="hero-btn">
                             <strong>
                                 Explore
