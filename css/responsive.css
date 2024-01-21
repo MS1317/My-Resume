@@ -9,24 +9,6 @@
     }
 }
 
-@media (max-width:482px){
-    .hero-head{
-        font-size: 25px!important;
-    }
-}
-
-@media(min-width:482px) and (max-width:520px){
-    .hero-head{
-        font-size: 28px!important;
-    }
-}
-
-@media(min-width: 520px) and (max-width:558px){
-    .hero-head{
-        font-size: 32px!important;
-    }
-}
-
 @media (max-width:600px){
     .hero-img{
         display: none;
@@ -41,12 +23,6 @@
 }
 }
 
-@media(min-width:558px) and (max-width:600px){
-    .hero-head{
-        font-size: 36px!important;
-    }
-}
-
 @media (max-width:600px){
     .hero-content{
     padding: 50px 0px!important;
@@ -58,22 +34,17 @@
     }
 }
 
-@media (min-width:601px) and (max-width:830px)
-{
+@media (min-width:601px) and (max-width:830px){
     .intro-sec
     .intro-overlay
     .hero-sec
     .hero-overlay
     .hero-content{
         max-width: 540px!important;
-        .hero-head{
-            font-size: 22px!important;
-        }
-}
+    }
 }
 
-@media (max-width:969px)
-{
+@media (max-width:969px){
     #main .hero-sec{
         margin-left: auto!important;
         margin-right: auto!important;
@@ -98,18 +69,6 @@
 
     .side-details-2{
         overflow: hidden;
-    }
-}
-
-@media (min-width:830px) and (max-width:982px)
-{
-    .intro-sec
-    .intro-overlay
-    .hero-sec
-    .hero-overlay
-    .hero-content
-    .hero-head{
-        font-size: 32px!important;
     }
 }
 
@@ -139,11 +98,25 @@
     .intro-overlay{
         padding: 45px 0px!important;
     }
+
+    .main-body{
+        margin: 0px;
+    }
 }
 
 @media (min-width:970px){
     .side-profile{
         max-width: 250px!important;
         width: 100%!important;
+    }
+    
+    #main{
+        margin-left: 0px!important;
+    }
+}
+
+@media (max-width:1070px){
+    h1{
+        font-size: calc(1.075rem + 1.5vw)!important;
     }
 }
