@@ -1,7 +1,7 @@
 function openNav() {
     document.getElementById("mySidenav").style.maxWidth="250px";
     document.getElementById("mySidenav").style.width="100%";
-    document.getElementById("main").style.marginRight="183px"
+    document.getElementById("main").style.marginRight="81px"
     document.body.style.backgroundColor="rgba(0,0,0,0.4)";
     document.getElementById("sideProfileBtn").style.display="none";
     document.getElementsByClassName("side-navbar").style.right="-33px";

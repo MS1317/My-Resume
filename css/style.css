@@ -2,6 +2,10 @@ body{
     transition: background-color 1s;
 }
 
+body{
+    transition: 1s;
+}
+
 .main-body{
     position: relative;
     margin: 10px;
@@ -15,6 +19,7 @@ body{
 }
 
 .sidenav{
+    margin: 10px;
     box-shadow: 1px 0px 5px black;
     height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
     background-color: #20202a;
@@ -43,7 +48,14 @@ body{
 }
 
 .side-navbar.mw-100{
-    display: none;
+    display: none!important;
+}
+
+.side-navbar .btOn{
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidenav a:hover{
@@ -52,7 +64,6 @@ body{
 
 .side-navbar{
     text-align: center;
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
@@ -65,9 +76,7 @@ body{
 .openBtn{
     color: #818181;
     font-size: 20px;
-    cursor:pointer;
-    margin-right: 10px;
-   
+    cursor:pointer;   
 }
 
 #main
@@ -76,9 +85,25 @@ body{
 
 }
 
+.intro-sec{
+    width: 75%;
+}
+
+.side-profile-parent{
+    width: 25%;
+    position: relative;
+}
 
 /* Hero Section */
 #main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+
+    .col-md-4{
+        position: relative;
+    };
+
     transition: margin-right 1s,margin-left 1s;
 
     .intro-sec{
@@ -100,8 +125,8 @@ body{
     }
 
     .hero-sec{
-        margin-right: 75px;
-        margin-left: 265px;
+        margin-right: auto;
+        margin-left: auto;
         max-width: 95%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -185,7 +210,6 @@ body{
     }
 }
 
-
 /* Profile*/
 .side-profile {
     background-color: #20202a;
@@ -202,7 +226,6 @@ body{
     color: white;
     overflow: hidden;
     width: 100%;
-    max-width: 250px;
 }
 
 #mySideProfile{
@@ -288,12 +311,12 @@ td.details-head {
 .icon{
     display: flex;
     justify-content: space-between;
- .icon-img{
-    width: 100%;
-    max-width: 35px;
-}
-.channel-link{
-    text-decoration: none;
-    color: #8c8c8e;
-}
+    .icon-img{
+        width: 100%;
+        max-width: 35px;
+    }
+    .channel-link{
+        text-decoration: none;
+        color: #8c8c8e;
+    }
 }

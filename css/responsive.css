@@ -44,6 +44,16 @@
     }
 }
 
+@media (max-width:968px){
+    #main{
+        flex-direction: column;
+    }
+
+    .intro-sec{
+        width: 100%;
+    }
+}
+
 @media (max-width:969px){
     #main .hero-sec{
         margin-left: auto!important;
@@ -70,9 +80,7 @@
     .side-details-2{
         overflow: hidden;
     }
-}
 
-@media (max-width:969px){
     .side-navbar.h-100{
         display: none;
         position: sticky;
@@ -99,14 +107,13 @@
         padding: 45px 0px!important;
     }
 
-    .main-body{
-        margin: 0px;
+    .side-navbar.mw-100{
+        display: flex!important;
     }
 }
 
 @media (min-width:970px){
     .side-profile{
-        max-width: 250px!important;
         width: 100%!important;
     }
     
