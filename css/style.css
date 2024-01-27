@@ -19,13 +19,13 @@ body{
 }
 
 .sidenav{
-    margin: 10px;
+    overflow: hidden;
     box-shadow: 1px 0px 5px black;
     height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
     background-color: #20202a;
     transition: 1s;
     width: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     padding-top: 20px;
@@ -35,6 +35,7 @@ body{
         padding: 0px 15px;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 }
 }
 
@@ -96,6 +97,10 @@ body{
 
 /* Hero Section */
 #main{
+    max-width: 1400px;
+    position: relative;
+    margin-left: auto!important;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;  
@@ -103,8 +108,6 @@ body{
     .col-md-4{
         position: relative;
     };
-
-    transition: margin-right 1s,margin-left 1s;
 
     .intro-sec{
         overflow: hidden;
@@ -114,7 +117,7 @@ body{
 
     .intro-sec{
         background-size: cover;
-        background-image: url("../assets/images/bg.jpg");
+        background-image: url("../assets/images/bg.png");
         background-position: 500px;
         position: relative;
     }
@@ -125,12 +128,14 @@ body{
     }
 
     .hero-sec{
+        transition: margin-right 1s,margin-left 1s;
         margin-right: auto;
         margin-left: auto;
         max-width: 95%;
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        background-image: url("../assets/images/bg.jpg");   
+        background-image: url("../assets/images/bg.png");   
     }
 
     .hero-img{
@@ -272,6 +277,7 @@ body{
 
 .designation{
     text-align: center;
+    width: 100%;
 }
 
 .designation-list{

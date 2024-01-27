@@ -9,7 +9,7 @@
     <div class="side-profile-parent">
         <aside id="mySideProfile" class="side-profile">
             <a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">&times</a>
-                <div id="sideDetails1" class="side-details">
+                <div id="sideDetails1" class="side-details p-3">
                     <img class="me" src="assets\images\IMG_20240105_222611_375.jpg" alt="img">
                         <div class="name-title">
                             <strong>
@@ -17,7 +17,7 @@
                             </strong>
                         </div>
                     <div class="designation">
-                        <ul class="p-1 designation-list">
+                        <ul class="p-1 designation-list m-0">
                             <div class="icon">
                                 <li>Frontend Developer</li>
                                 <img class="icon-img" src="assets\icons\front-end.png">
@@ -79,9 +79,9 @@
         </aside>
     </div>
 
-    <section class="intro-sec">
+    <section id="intro-sec" class="intro-sec">
         <div class="intro-overlay">
-            <div class="hero-sec">
+            <div id="hero-sec" class="hero-sec">
                 <div class="hero-overlay">
                     <div class="hero-content">
                     <h1 class="hero-head">Discover my amazing workspace</h1>
@@ -109,17 +109,17 @@
         <div class="btOn">
             <div class="openBtn" onclick="openNav()">&#9776;</div>
         </div>
-    </div>
 
-    <div id="mySidenav" class="sidenav">
-    <div class="sidebar-content">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <div id="mySidenav" class="sidenav">
+            <div class="sidebar-content">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
     </div>
-</div>
 </section>
 
 <!-- The side navigation menu -->

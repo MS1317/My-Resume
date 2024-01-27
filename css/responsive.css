@@ -117,9 +117,9 @@
         width: 100%!important;
     }
     
-    #main{
+    /* #main{
         margin-left: 0px!important;
-    }
+    } */
 }
 
 @media (max-width:1070px){
