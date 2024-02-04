@@ -13,5 +13,4 @@ function closeNav(){
     document.getElementById("hero-sec").style.marginRight="0px"
     document.body.style.backgroundColor = "white";
     document.getElementById("sideProfileBtn").style.display="block";
-    // document.getElementsByClassName("sidenavbar").style.right="0"
 }

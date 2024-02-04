@@ -1,5 +1,5 @@
 body{
-    transition: background-color 1s;
+    /* transition: background-color 1s; */
 }
 
 body{
@@ -91,12 +91,15 @@ body{
 }
 
 .side-profile-parent{
-    width: 25%;
+    max-width: 250px;
+    overflow: hidden;
+    width: max-content;
     position: relative;
 }
 
 /* Hero Section */
 #main{
+    overflow-y: hidden;
     max-width: 1400px;
     position: relative;
     margin-left: auto!important;
@@ -104,6 +107,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;  
+    justify-content: center;
 
     .col-md-4{
         position: relative;
@@ -129,8 +133,8 @@ body{
 
     .hero-sec{
         transition: margin-right 1s,margin-left 1s;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 0px;
+        margin-left: 19px;
         max-width: 95%;
         background-size: cover;
         background-position: center;
@@ -180,6 +184,11 @@ body{
         }
     }
 
+    .profile-cont{
+        transition: all 1s;
+        position: relative;
+    }
+
     /* Type Effect */
     #typed{
         font-weight: bolder;
@@ -223,7 +232,7 @@ body{
     box-shadow: 1px 0px 5px black;
     min-height: 480px;
     height: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     /* border: 1px solid white; */
@@ -231,10 +240,15 @@ body{
     color: white;
     overflow: hidden;
     width: 100%;
+
+    .p-3{
+        min-width: 240px;
+    }
 }
 
 #mySideProfile{
     .closebtn{
+    max-height: 45px;
     transition: 0.3s;
     display: block;
     padding: 8px 8px 8px 32px;
@@ -283,8 +297,6 @@ body{
 .designation-list{
     list-style-type: none;
     color: #8c8c8e;
-    /* font-weight: 200; */
-    text-wrap: nowrap;
 }
 
 .designation-list li{
@@ -300,7 +312,7 @@ table{
     overflow: auto;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
-    width: 197.2px;
+    width: 100%;
     text-align: center;
 }
 
@@ -314,15 +326,8 @@ td.details-head {
     float: right;
 }
 
-.icon{
-    display: flex;
-    justify-content: space-between;
-    .icon-img{
-        width: 100%;
-        max-width: 35px;
-    }
-    .channel-link{
-        text-decoration: none;
-        color: #8c8c8e;
-    }
+
+.channel-link{
+    text-decoration: none;
+    color: #8c8c8e;
 }
