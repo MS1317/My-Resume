@@ -144,9 +144,9 @@ body{
 
     .hero-img{
         position: absolute;
-        top: -5.8%;
+        top: -10.8%;
         right: 0%;
-        max-width: 250px;
+        max-width: 235px;
         width: 100%;
         height: auto;
     }
@@ -235,7 +235,6 @@ body{
     position: relative;
     top: 0;
     left: 0;
-    /* border: 1px solid white; */
     z-index: 99999;
     color: white;
     overflow: hidden;
@@ -270,7 +269,6 @@ body{
 
 .side-details{
     font-family: 'Poppins', sans-serif;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,4 +328,38 @@ td.details-head {
 .channel-link{
     text-decoration: none;
     color: #8c8c8e;
+}
+
+/* Skill Numbers */ 
+.text-separator{
+    display: none!important;
+}
+
+.text-max{
+    display: none!important;
+}
+
+.base{
+    width: 50%!important;
+    height: auto!important;
+}
+
+::part(text-max){
+    display: none!important;
+}
+
+::part(base){
+    width: 50%;
+}
+
+::part(text){
+    font-size: x-large;
+}
+
+::part(value)	{
+    stroke: red;
+}
+
+::part(circle)	{
+    display: none!important;
 }

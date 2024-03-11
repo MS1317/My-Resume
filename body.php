@@ -10,7 +10,7 @@
          <div id="profile-cont" class="profile-cont">
             <a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">&times</a>
             <div id="sideDetails1" class="side-details p-3">
-               <img class="me" src="assets\images\IMG_20240105_222611_375.jpg" alt="img">
+               <img class="me" src="assets\images\IMG_20240105_222611_375.png" alt="img">
                <div class="name-title">
                   <strong>
                      <h6>Manpreet Singh</h6>
@@ -29,6 +29,7 @@
                   </ul>
                </div>
             </div>
+                     
             <div id="sideDetails2" class="side-details-2 p-3">
                <table>
                   <tr>
@@ -57,6 +58,15 @@
                   </tr>
                </table>
             </div>
+
+            <circle-progress value="60" max="100" 	text-format='percent'></circle-progress>
+
+            <circle-progress value="70" max="100" 	text-format='percent'></circle-progress>
+<!-- 
+            <circle-progress value="80" max="100" 	text-format='percent'></circle-progress>
+
+            <circle-progress value="50" max="100" 	text-format='percent'></circle-progress> -->
+
          </div>
       </div>
    </div>
