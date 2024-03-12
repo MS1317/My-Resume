@@ -59,14 +59,22 @@
                </table>
             </div>
 
-            <circle-progress value="60" max="100" 	text-format='percent'></circle-progress>
+            <div class="progrss-div d-flex justify-content-evenly">  
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="100" max="100" 	text-format='percent'></circle-progress>
+                  <h6 class="text-center">Punjabi</h6>
+               </div>
 
-            <circle-progress value="70" max="100" 	text-format='percent'></circle-progress>
-<!-- 
-            <circle-progress value="80" max="100" 	text-format='percent'></circle-progress>
-
-            <circle-progress value="50" max="100" 	text-format='percent'></circle-progress> -->
-
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="60" max="100" 	text-format='percent'></circle-progress>
+                  <h6 class="text-center">Hindi</h6>
+               </div>
+            
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="80" max="100" 	text-format='percent'></circle-progress>
+                  <h6 class="text-center">English</h6>
+               </div>
+            </div>
          </div>
       </div>
    </div>

@@ -1,8 +1,5 @@
 body{
     /* transition: background-color 1s; */
-}
-
-body{
     transition: 1s;
 }
 
@@ -349,7 +346,13 @@ td.details-head {
 }
 
 ::part(base){
-    width: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
 }
 
 ::part(text){
@@ -360,6 +363,6 @@ td.details-head {
     stroke: red;
 }
 
-::part(circle)	{
+/* ::part(circle)	{
     display: none!important;
-}
+} */
