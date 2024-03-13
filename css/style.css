@@ -10,7 +10,7 @@ body{
 }
 
 
-/* Sidenav */
+/*-------------------------------------------------- Sidenav Start --------------------------------------------------*/
 .side-navbar{
     background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
 }
@@ -18,13 +18,13 @@ body{
 .sidenav{
     overflow: hidden;
     box-shadow: 1px 0px 5px black;
-    height: 100%; /* Full-height: remove this if you want "auto", or change value to desired height */
+    height: 100%;
     background-color: #20202a;
     transition: 1s;
     width: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 18px;
     padding-top: 20px;
     z-index: 9999;
 
@@ -65,7 +65,6 @@ body{
     top: 0;
     right: 0;
     z-index: 1;
-    /* border: red 1px solid; */
     width:100%;
     max-width: 50px;
     justify-content: space-between;
@@ -82,19 +81,9 @@ body{
     text-align: center;
 
 }
+/*-------------------------------------------------- Sidenav End --------------------------------------------------*/
 
-.intro-sec{
-    width: 75%;
-}
-
-.side-profile-parent{
-    max-width: 250px;
-    overflow: hidden;
-    width: max-content;
-    position: relative;
-}
-
-/* Hero Section */
+/*-------------------------------------------------- Hero Section Start --------------------------------------------------*/
 #main{
     overflow-y: hidden;
     max-width: 1400px;
@@ -221,7 +210,19 @@ body{
     }
 }
 
-/* Profile*/
+.intro-sec{
+    width: 75%;
+}
+/*-------------------------------------------------- Hero Section End --------------------------------------------------*/
+
+/*-------------------------------------------------- Side Profile Start --------------------------------------------------*/
+.side-profile-parent{
+    max-width: 250px;
+    overflow: hidden;
+    width: max-content;
+    position: relative;
+}
+
 .side-profile {
     background-color: #20202a;
     display: flex;
@@ -327,7 +328,6 @@ td.details-head {
     color: #8c8c8e;
 }
 
-/* Skill Numbers */ 
 .text-separator{
     display: none!important;
 }
@@ -362,7 +362,4 @@ td.details-head {
 ::part(value)	{
     stroke: red;
 }
-
-/* ::part(circle)	{
-    display: none!important;
-} */
+/*-------------------------------------------------- Side Profile End --------------------------------------------------*/
