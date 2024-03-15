@@ -1,9 +1,11 @@
 <!-- Hero  Section -->
 <section id="main">
+
    <div class="side-navbar mw-100 d-flex">
       <i id="sideProfileBtn"class="side-profile-btn fas fa-ellipsis-v" onclick="openSideProfile()"></i>
       <span id="navBtn" class="openBtn" onclick="openNav()">&#9776;</span>
    </div>
+
    <!-- Side Profile -->
    <div id="side-profile-parent" class="side-profile-parent">
       <div id="mySideProfile" class="side-profile">
@@ -78,34 +80,83 @@
          </div>
       </div>
    </div>
-   </div>
-   <section id="intro-sec" class="intro-sec">
-      <div class="intro-overlay">
-         <div id="hero-sec" class="hero-sec">
-            <div class="hero-overlay">
-               <div class="hero-content">
-                  <h1 class="hero-head">Discover my amazing workspace</h1>
-                  <div class="wrapper">
-                     <h6 class="effect-wrapper">
-                        I am
-                        <<span class="typed-text-tag">code</span>>
-                        <span id="typed"></span>
-                        <span class="cursor">&nbsp;</span>
-                        <<span class="typed-text-tag">/code</span>>
-                     </h6>
+
+   <div class="content" style="overflow-y:scroll!important">
+      <div id="intro-sec" class="intro-sec">
+         <div class="intro-overlay">
+            <div id="hero-sec" class="hero-sec">
+               <div class="hero-overlay">
+                  <div class="hero-content">
+                     <h1 class="hero-head">Discover my amazing workspace</h1>
+                     <div class="wrapper">
+                        <h6 class="effect-wrapper">
+                           I am
+                           <<span class="typed-text-tag">code</span>>
+                           <span id="typed"></span>
+                           <span class="cursor">&nbsp;</span>
+                           <<span class="typed-text-tag">/code</span>>
+                        </h6>
+                     </div>
+                     <button class="hero-btn">
+                     <strong>
+                     Explore
+                     </strong>
+                     </button>
+                     <img class="hero-img" src="assets/images/Untitled-1.png" >
                   </div>
-                  <button class="hero-btn">
-                  <strong>
-                  Explore
-                  </strong>
-                  </button>
-                  <img class="hero-img" src="assets/images/Untitled-1.png" >
                </div>
             </div>
          </div>
       </div>
-   </section>
-   <div class="side-navbar mh-100">
+      <div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+      </div>
+   </div>
+
+   <div class="side-navbar">
       <div class="btOn">
          <div class="openBtn" onclick="openNav()">&#9776;</div>
       </div>
