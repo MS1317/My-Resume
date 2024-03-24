@@ -1,33 +1,39 @@
 body{
     overflow: hidden;
-    /* transition: background-color 1s; */
+    transition: background-color 5s;
     transition: 1s;
 }
 
 .main-body{
     position: relative;
     margin: 10px;
-    background-color: #191923!important;
+    background-color: rgb(25 25 35);
 }
 
 #main{
-    height: 100vh;
+    max-height: 96vh;
 }
 
 .content,
 .intro-sec{
     width: -webkit-fill-available;
-    }
+    scrollbar-width: none;
+}
+
+.content{
+    max-height: inherit;
+}
 
 /*-------------------------------------------------- Sidenav Start --------------------------------------------------*/
 .side-navbar{
+    max-height: inherit;
     background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
 }
 
 .sidenav{
     overflow: hidden;
     box-shadow: 1px 0px 5px black;
-    height: 100%;
+    height: 96vh;
     background-color: #20202a;
     transition: 1s;
     width: 0;
@@ -112,13 +118,11 @@ body{
         overflow: hidden;
         color: #f1f1f1;
         padding:0px;
-    }
-
-    .intro-sec{
         background-size: cover;
         background-image: url("../assets/images/bg.png");
         background-position: 500px;
         position: relative;
+        z-index: -1;
     }
 
     .intro-overlay{
@@ -263,9 +267,11 @@ body{
 }
 
 .side-profile-btn{
-    color: #818181;
-    margin-left: 10px;
-    
+    color: #818181;    
+}
+
+#sideProfileBtn{
+    height: 45px;
 }
 
 #mySideProfile .closebtn{
@@ -370,3 +376,20 @@ td.details-head {
     stroke: red;
 }
 /*-------------------------------------------------- Side Profile End --------------------------------------------------*/
+/* Backdrop Filter */
+.backdrop-filter{
+    width: 100%;
+    border: 1px solid;
+    background-color: unset;
+    transition: all 1s;
+}
+
+/*-------------------------------------------------- Services Start --------------------------------------------------*/
+.services{
+    position: relative;
+    z-index: -1;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
