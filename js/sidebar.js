@@ -3,8 +3,8 @@ function openNav() {
     document.getElementById("mySidenav").style.width="100%";
     document.getElementById("hero-sec").style.marginRight="81px";
     document.getElementById("sideProfileBtn").style.display="none";
-    // document.getElementsByClassName("side-navbar").style.right="-33px";
-    document.getElementById("backdrop-filtr").style.backgroundColor="rgba(0,0,0,0.5)";
+    document.getElementById("backdrop-filtr").style.backgroundColor="rgba(30,30,40,.88)";
+    document.getElementById("content").style.left="-100px";
 }
 
 function closeNav(){
@@ -13,4 +13,5 @@ function closeNav(){
     document.getElementById("hero-sec").style.marginRight="0px"
     document.getElementById("sideProfileBtn").style.display="block";
     document.getElementById("backdrop-filtr").style.backgroundColor="unset";
+    document.getElementById("content").style.left="0px";
 }

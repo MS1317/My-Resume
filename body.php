@@ -7,7 +7,7 @@
       </div>
 
       <!-- The side navigation menu and toggle-->
-      <div class="side-navbar" style="order:3">
+      <div class="side-navbar nav-shadow" style="order:3">
          <div class="btOn">
             <div id="navBtn" class="openBtn" onclick="openNav()">&#9776;</div>
          </div>
@@ -24,7 +24,7 @@
 
    <!-- Side Profile -->
    <div id="side-profile-parent" class="side-profile-parent" style="order:1;">
-      <div id="mySideProfile" class="side-profile">
+      <div id="mySideProfile" class="side-profile nav-shadow">
          <div id="profile-cont" class="profile-cont">
             <a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">&times</a>
             <div id="sideDetails1" class="side-details p-3">
@@ -47,58 +47,83 @@
                   </ul>
                </div>
             </div>
-                     
-            <div id="sideDetails2" class="side-details-2 p-3">
-               <table>
-                  <tr>
-                     <td class="details-head">
-                        Residence:
-                     </td>
-                     <td class="details-data">
-                        India
-                     </td>
-                  </tr>
-                  <tr>
-                     <td   class="details-head">
-                        City:
-                     </td>
-                     <td class="details-data">
-                        Ludhiana
-                     </td>
-                  </tr>
-                  <tr>
-                     <td   class="details-head">
-                        Age:
-                     </td>
-                     <td class="details-data">
-                        23
-                     </td>
-                  </tr>
-               </table>
-            </div>
+         </div>
 
-            <div class="progrss-div d-flex justify-content-evenly">  
-               <div class="lang-prog">
-                  <circle-progress class="circle" value="100" max="100" 	text-format='percent'></circle-progress>
-                  <h6 class="text-center">Punjabi</h6>
+         <div class="sidebar-scrollable-menu">
+               <div id="sideDetails2" class="side-details-2 p-3">
+                  <table>
+                     <tr>
+                        <td class="details-head">
+                           Residence:
+                        </td>
+                        <td class="details-data">
+                           India
+                        </td>
+                     </tr>
+                     <tr>
+                        <td   class="details-head">
+                           City:
+                        </td>
+                        <td class="details-data">
+                           Ludhiana
+                        </td>
+                     </tr>
+                     <tr>
+                        <td   class="details-head">
+                           Age:
+                        </td>
+                        <td class="details-data">
+                           23
+                        </td>
+                     </tr>
+                  </table>
                </div>
 
-               <div class="lang-prog">
-                  <circle-progress class="circle" value="60" max="100" 	text-format='percent'></circle-progress>
-                  <h6 class="text-center">Hindi</h6>
+                  <hr>
+
+               <div class="progrss-div d-flex justify-content-evenly">  
+                  <div class="lang-prog">
+                     <circle-progress class="circle" value="100" max="100" 	text-format='percent'></circle-progress>
+                     <h6 class="text-center">Punjabi</h6>
+                  </div>
+
+                  <div class="lang-prog">
+                     <circle-progress class="circle" value="60" max="100" 	text-format='percent'></circle-progress>
+                     <h6 class="text-center">Hindi</h6>
+                  </div>
+               
+                  <div class="lang-prog">
+                     <circle-progress class="circle" value="80" max="100" 	text-format='percent'></circle-progress>
+                     <h6 class="text-center">English</h6>
+                  </div>
                </div>
-            
-               <div class="lang-prog">
-                  <circle-progress class="circle" value="80" max="100" 	text-format='percent'></circle-progress>
-                  <h6 class="text-center">English</h6>
+
+                  <hr>
+
+               <div class="content">
+                  <div class="profile-skills">
+                     <div>
+                           <ul class="skills skills3 p-0 pb-3">
+                              <li class="sk-css"><span>CSS</span></li>
+                              <li class="sk-htm"><span>HTML</span></li>
+                              <li class="sk-jav"><span>JS</span></li>
+                              <li class="sk-php"><span>PHP</span></li>
+                              <li class="sk-sql"><span>SQL</span></li>
+                           </ul>
+                     </div>
+                  </div>
                </div>
-            </div>
+         </div>
+
+         <div class="social-links">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
          </div>
       </div>
    </div>
   
    <!-- Main  Content -->
-   <div class="content" style="overflow-y:scroll!important; order:2;">
+   <div id="content" class="content" style="overflow-y:scroll!important; order:2; left:0px;">
       <div id="backdrop-filtr" class="backdrop-filter">
       <!-- Hero Section -->
          <div id="intro-sec" class="intro-sec">
@@ -130,10 +155,25 @@
                         </div>
                      </div>
                   </div>
+
+                  <div class="stats">
+                  <h3 class="years">Years Experience</h3>
+                  <h3 class="projects">Projects Completed</h3>
+                  <!-- <h3 class="customers"></h3> -->
+                                 </div>
                </div>
          </div>
       
          <div class="services">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>

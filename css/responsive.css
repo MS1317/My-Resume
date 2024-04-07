@@ -3,9 +3,15 @@
     .sidenav a{font-size: 18px;}
 }
 
-@media(max-width:452px){
+@media (max-width:452px){
     .hero-content{
         padding: 40px 20px!important;
+    }
+}
+
+@media (max-width:500px){
+    .stats .years{
+        
     }
 }
 
@@ -71,7 +77,6 @@
         overflow-y: scroll!important;
         order: 2;
         position: relative;
-        height: 100vh;
         margin-top: 44px;
     }
 }
@@ -81,16 +86,18 @@
 }
 
 @media (max-width:968px){
-    /* #main{
-        flex-direction: column;
-    } */
-
     .intro-sec{
         width: 100%;
     }
 
     .side-navbar.mh-100 .btOn{
         display: none;
+    }
+}
+
+@media (max-width:969px){
+    .social-links{
+        top: -24px;
     }
 
     .side-profile-parent{
@@ -99,13 +106,7 @@
         top: -23px;
         left: 0;
     }
-/* 
-    .side-navbar{
-        display: none;
-    } */
-}
 
-@media (max-width:969px){
     #profile-cont{
         left: 0px;
     }
@@ -156,12 +157,8 @@
         }
     }
 
-    /* .openBtn{
-        margin-right: 10px;
-    } */
-
     .intro-overlay{
-        padding: 45px 0px!important;
+        padding: 45px 0px 0px!important;
     }
 
     .side-navbar.mw-100{
@@ -171,7 +168,7 @@
     }
 }
 
-@media (min-width:970px){
+@media (min-width:969px){
     .side-profile{
         width: 100%!important;
     }
