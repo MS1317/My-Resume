@@ -133,12 +133,13 @@
     #mySideProfile .closebtn {
         display: flex;
         align-items: center;
+        position: absolute;
     }
 
     .side-profile{
         transition: 1s;
         width:0;
-        top: 23px;
+        top: 4%;
     }
 
     .side-details{

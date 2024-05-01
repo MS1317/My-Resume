@@ -103,7 +103,7 @@
                <div class="content">
                   <div class="profile-skills">
                      <div>
-                           <ul class="skills skills3 p-0 pb-3">
+                           <ul class="skills skills3 p-0 m-0">
                               <li class="sk-css"><span>CSS</span></li>
                               <li class="sk-htm"><span>HTML</span></li>
                               <li class="sk-jav"><span>JS</span></li>
