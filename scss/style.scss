@@ -11,7 +11,21 @@
     counter-reset: num var(--num);
 }
 
-.years::before,.projects::before,.customers::before{
+.years::before{
+  font-size: x-large;
+  margin: 0px 15px;
+  color: red;
+  content: counter(num)"+";
+}
+
+.projects::before{
+  font-size: x-large;
+  margin: 0px 15px;
+  color: red;
+  content: counter(num)"+";
+}
+
+.customers::before{
   font-size: x-large;
   margin: 0px 15px;
   color: red;
