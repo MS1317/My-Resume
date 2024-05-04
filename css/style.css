@@ -54,7 +54,7 @@ hr{
 .sidenav{
     overflow: hidden;
     box-shadow: 1px 0px 5px black;
-    height: 96vh;
+    height: 100vh;
     background-color: #20202a;
     transition: 1s;
     width: 0;
@@ -450,7 +450,7 @@ td.details-head {
 }
 
 .profile-skills {
-    padding: 0px 16px;
+    padding: 0px 4px;
     display: flex;
 	position: relative;
 	width: 100%;
@@ -709,7 +709,9 @@ ul.skills li.more span:hover {
 
 /*-------------------------------------------------- Services Start --------------------------------------------------*/
 .services{
-    padding: 0px 20px;
+    overflow-wrap: break-word;
+    height: 100%;
+    padding: 20px 20px;
     background-color: #1e1e28;
     position: relative;
     z-index: -1;
@@ -724,27 +726,24 @@ ul.skills li.more span:hover {
 }
 
 .years,.projects,.customers{
-  font-size: larger;
-  color: white;
-    counter-reset: num var(--num);
+    font-size: larger;
+    color: white;
+    counter-reset: num var(--num);  
 }
 
 .years::before{
-  font-size: x-large;
   margin: 0px 15px;
   color: red;
   content: counter(num)"+";
 }
 
 .projects::before{
-  font-size: x-large;
   margin: 0px 15px;
   color: red;
   content: counter(num)"+";
 }
 
 .customers::before{
-  font-size: x-large;
   margin: 0px 15px;
   color: red;
   content: counter(num)"+";

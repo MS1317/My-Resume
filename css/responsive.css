@@ -3,6 +3,27 @@
     .sidenav a{font-size: 18px;}
 }
 
+@media (max-width:572px){
+    .years, .projects, .customers{
+        width: min-content;
+        display: flex;
+    }
+
+    #main
+    .stats{
+    font-size: small;
+    justify-content: center;
+    }
+
+    .years::before{
+        margin: 0 7px;
+    }
+
+    .projects::before{
+        margin: 0 7px;
+    }
+}
+
 @media (max-width:452px){
     .hero-content{
         padding: 40px 20px!important;
