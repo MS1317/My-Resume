@@ -9,12 +9,6 @@
     }
 }
 
-@media (max-width:500px){
-    .stats .years{
-        
-    }
-}
-
 @media (max-width:600px){
     .hero-img{
         display: none;
@@ -61,6 +55,22 @@
 }
 
 @media (max-width:843px){
+    .side-profile-parent .profile-cont{
+        order: 1;
+    }
+
+    .side-profile-parent .sidebar-scrollable-menu{
+        order: 3;
+    }
+
+    .side-profile-parent .social-links{
+        order: 2;
+    }
+
+    .side-profile-parent .side-details{
+        margin: 0px;
+    }
+
     .side-navbar{
         position: absolute;
         max-height: 50px;

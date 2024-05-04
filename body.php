@@ -2,8 +2,7 @@
    
       <!-- Side Profile toggle -->
       <div class="side-navbar mw-100 d-flex justify-content-center align-items-start" style="order:1;">
-         <i id="sideProfileBtn"class="side-profile-btn fas fa-ellipsis-v d-flex align-items-center" onclick="openSideProfile()"></i>
-         <!-- <span id="navBtn" class="openBtn" onclick="openNav()">&#9776;</span> -->
+         <span id="sideProfileBtn" class="side-profile-btn d-flex align-items-center" onclick="openSideProfile()"></span>
       </div>
 
       <!-- The side navigation menu and toggle-->
@@ -50,7 +49,7 @@
          </div>
 
          <div class="sidebar-scrollable-menu">
-               <div id="sideDetails2" class="side-details-2 p-3">
+               <div id="sideDetails2" class="side-details-2 pt-3 px-3">
                   <table>
                      <tr>
                         <td class="details-head">

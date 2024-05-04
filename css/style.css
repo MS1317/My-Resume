@@ -302,7 +302,6 @@ hr{
     color: white;
     overflow: hidden;
     width: 100%;
-    justify-content: space-between;
 }
 
 .side-profile
@@ -319,6 +318,10 @@ hr{
     text-decoration: none;
     font-size: 25px;
     color: #818181;
+}
+
+.side-profile-btn:after {
+    content: '\2807';
 }
 
 .side-profile-btn{
@@ -397,8 +400,10 @@ td.details-head {
 }
 
 .sidebar-scrollable-menu{
-    overflow-y: scroll;
-    height: -webkit-fill-available;
+    padding: 15px 15px 90px;
+    overflow: auto;
+    height: 100%;
+    max-height: calc(100vh - 290px);
     scrollbar-width: none;
 }
 
@@ -438,6 +443,12 @@ td.details-head {
 }
 
 /* Skills */
+.sidebar-scrollable-menu .content{
+    margin: 0;
+    overflow: unset;
+    overflow-y: unset!important;
+}
+
 .profile-skills {
     padding: 0px 16px;
     display: flex;
