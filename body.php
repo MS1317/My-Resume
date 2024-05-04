@@ -22,31 +22,31 @@
       </div> 
 
    <!-- Side Profile -->
-   <div id="side-profile-parent" class="side-profile-parent" style="order:1;">
-      <div id="mySideProfile" class="side-profile nav-shadow">
-         <div id="profile-cont" class="profile-cont">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">&times</a>
-            <div id="sideDetails1" class="side-details p-3">
-               <img class="me" src="assets\images\IMG_20240105_222611_375.png" alt="img">
-               <div class="name-title">
-                  <strong>
-                     <h6>Manpreet Singh</h6>
-                  </strong>
-               </div>
-               <div class="designation">
-                  <ul class="p-1 designation-list m-0">
-                     <li>Frontend Developer,</li>
-                     <li>React JS,</li>
-                     <li>Wordpress,</li>
-                     <li>
-                        <a class="channel-link" href="http://www.youtube.com/@TechiTuber">
-                        <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO
-                        </a>
-                     </li>
-                  </ul>
+      <div id="side-profile-parent" class="side-profile-parent" style="order:1;">
+         <div id="mySideProfile" class="side-profile nav-shadow">
+            <div id="profile-cont" class="profile-cont">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeSideProfile()">&times</a>
+               <div id="sideDetails1" class="side-details p-3">
+                  <img class="me" src="assets\images\IMG_20240105_222611_375.jpg" alt="img">
+                  <div class="name-title">
+                     <strong>
+                        <h6>Manpreet Singh</h6>
+                     </strong>
+                  </div>
+                  <div class="designation">
+                     <ul class="p-1 designation-list m-0">
+                        <li>Frontend Developer,</li>
+                        <li>React JS,</li>
+                        <li>Wordpress,</li>
+                        <li>
+                           <a class="channel-link" href="http://www.youtube.com/@TechiTuber">
+                           <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
                </div>
             </div>
-         </div>
 
          <div class="sidebar-scrollable-menu">
                <div id="sideDetails2" class="side-details-2 pt-3 px-3">
