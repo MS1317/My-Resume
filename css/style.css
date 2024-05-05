@@ -35,6 +35,16 @@ body{
     max-height: inherit;
 }
 
+/* div#content{
+    opacity: 0;
+    animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}    */
+
 hr{
     max-width: 220px;
     width: -webkit-fill-available;
@@ -150,7 +160,7 @@ hr{
 #main
 .intro-overlay{
     transition: all 1s;
-    padding: 90px 0px 0px;
+    padding: 45px 0px 0px;
     background-image:linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%);
 }
 
