@@ -1,5 +1,5 @@
- // Function to load content based on URL parameter
- function loadContent(page) {
+// Function to load content based on URL parameter
+function loadContent(page) {
     // Use AJAX to fetch the content of the selected page
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -8,6 +8,9 @@
             document.getElementById("content").innerHTML = this.responseText;
             // Update the URL without causing a page refresh
             history.pushState({page: page}, null, '?page=' + page);
+
+            // After loading the content, trigger the type animation again
+            initializeTypeEffect();
         }
     };
     xhttp.open("GET", "pages/" + page + ".php", true);
