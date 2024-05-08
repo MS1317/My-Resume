@@ -76,6 +76,11 @@
 }
 
 @media (max-width:843px){
+    .active-page{
+        display: none;
+    }
+
+    
     .side-profile-parent .profile-cont{
         order: 1;
     }

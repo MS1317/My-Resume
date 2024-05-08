@@ -7,7 +7,6 @@
 <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
 <script src="js\sidebar.js"></script>
 <script src="js\sideprofile.js"></script>
-<!-- <script src="js\custom.js"></script> -->
 <script src="js\typeEffect.js"></script>
 <script src="js\content-loader.js"></script>
 </body>

@@ -51,7 +51,15 @@ hr{
     margin: 1rem auto!important;
 }
 
+.page-content{
+    text-align: justify;
+    padding: 20px 20px;
+}
+
+
+
 /*-------------------------------------------------- Sidenav Start --------------------------------------------------*/
+
 .side-navbar{
     max-height: inherit;
     background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
@@ -96,6 +104,7 @@ hr{
 }
 
 .side-navbar .btOn{
+    margin-bottom: 15px;
     min-height: 45px;
     display: flex;
     justify-content: center;
@@ -127,6 +136,11 @@ hr{
     text-align: center;
 
 }
+
+.active-page {
+    transform: rotate(90deg);
+    color: #818181;
+}
 /*-------------------------------------------------- Sidenav End --------------------------------------------------*/
 
 /*-------------------------------------------------- Hero Section Start --------------------------------------------------*/
@@ -141,15 +155,22 @@ hr{
 }
 
 #main
-.intro-sec{
+.mainContent{
+    transition: all 1s;
     overflow: hidden;
     color: #f1f1f1!important;
-    padding:0px;
-    background-size: cover;
+    padding: 0px;
+    background-size: contain;
     background-image: url("../assets/images/bg.png");
-    background-position: 500px;
+    background-repeat: no-repeat;
     position: relative;
     z-index: -1;
+}
+
+.c-backdrop{
+    position: relative;
+    z-index: -5;
+    background-image: linear-gradient(180deg, rgba(30, 30, 40, .93) 0%, rgba(30, 30, 40, .96) 6%, rgba(30, 30, 40, .99) 7%, #1e1e28 100%)
 }
 
 #main
@@ -161,7 +182,6 @@ hr{
 .intro-overlay{
     transition: all 1s;
     padding: 45px 0px 0px;
-    background-image:linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%);
 }
 
 #main
@@ -721,8 +741,6 @@ ul.skills li.more span:hover {
 .services{
     overflow-wrap: break-word;
     height: 100%;
-    padding: 20px 20px;
-    background-color: #1e1e28;
     position: relative;
     z-index: -1;
     color: white;

@@ -35,7 +35,7 @@
                   </div>
                </div>
       <!-- Home Content -->
-               <div class="services pt-0">
+               <div class="page-content services pt-0">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
