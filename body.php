@@ -29,8 +29,8 @@ if (!in_array($page, $valid_pages)) {
       <div id="mySidenav" class="sidenav" style="max-width: 0px; width: 0px;">
          <div class="sidebar-content">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-            <a id="home" href="#" onclick="loadContent('home')">Home</a>
-            <a id="about" href="#" onclick="loadContent('about')">About</a>
+            <a id="home" href="?page=home" onclick="loadContent('home',event)">Home</a>
+            <a id="about" href="?page=about" onclick="loadContent('about',event)">About</a>
             <a href="#">Services</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a>

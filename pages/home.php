@@ -1,4 +1,5 @@
       <!-- Hero Section -->
+               <?php include 'fetch_data.php';?>
                <div id="intro-overlay" class="intro-overlay">
                   <div id="hero-sec" class="hero-sec">
                      <div id="hero-overlay" class="hero-overlay">
@@ -35,61 +36,21 @@
                   </div>
                </div>
       <!-- Home Content -->
-               <div class="page-content services pt-0">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
+         <div class="page-content services pt-0">   
+            <!-- Service Section -->
+            <section class="services-sec">
+               <div class="service-sec-content">
 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae dolor libero maxime perferendis maiores qui quaerat quam delectus facere? Saepe in placeat modi aliquam laboriosam alias, officia blanditiis numquam!</p>
-            
-                  <p>hicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsbhicbdsbsdbdsb</p>
+                  <?php foreach($cardData as $data):?>
+                     <div class="service-card">
+                        <div class="serv-icon">
+                           <img class="serv-img" src="<?php echo $data["icon_src"]; ?>" alt="">
+                        <div class="big-circle"></div>
+                        </div>
+                        <h5> <?php echo $data["title"]; ?></h5>
+                        <p> <?php echo $data["description"]; ?></p>
+                     </div>
+                  <?php endforeach; ?>
                </div>
-            </div>
+            </section>
+         </div>

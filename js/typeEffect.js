@@ -1,7 +1,7 @@
 // Wrap the script code in a function
 function initializeTypeEffect() {
     const typedSpan = document.getElementById("typed");
-    const totype = ["Frontend Expert", "Video Editor", "Photoshop Enthusiast", "YouTube Content Creator"];
+    const totype = ["Frontend Expert", "Video Editor", "YouTube Content Creator"];
 
     const delayTyping_char = 50;
     const delayErasing_text = 150;

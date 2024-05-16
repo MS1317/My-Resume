@@ -4,6 +4,7 @@ function openNav() {
     document.getElementById("backdrop-filtr").style.backgroundColor="rgba(30,30,40,.88)";
     document.getElementById("sideProfileBtn").style.display="none";
     document.getElementById("content").style.left="-100px";
+    document.getElementById("content").style.zIndex="-1";
     document.getElementById("hero-sec").style.marginRight="81px";
 }
 
@@ -13,5 +14,6 @@ function closeNav(){
     document.getElementById("sideProfileBtn").style.display="block";
     document.getElementById("backdrop-filtr").style.backgroundColor="unset";
     document.getElementById("content").style.left="0px";
+    document.getElementById("content").style.zIndex="0";
     document.getElementById("hero-sec").style.marginRight="0px"
 }
