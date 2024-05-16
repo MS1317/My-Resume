@@ -1,7 +1,7 @@
 <?php
 $servername="localhost";
 $username="u914843002_admin";
-$password="AdminMs@1234";
+$password="AdminMS@1234";
 $dbname="u914843002_mscv";
 
 // Create connection
