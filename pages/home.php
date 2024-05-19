@@ -38,7 +38,7 @@
          <div class="page-content services pt-0">   
             <!-- Service Section -->
             <section class="services-sec">
-               <?php require $_SERVER['DOCUMENT_ROOT'] . '/mscv/fetch_data.php'; ?>
+               <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
                   <?php if (!empty($cardData)) {
                     foreach($cardData as $data): ?>
                      <div class="service-card">
