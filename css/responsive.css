@@ -76,6 +76,12 @@
 }
 
 @media (max-width:843px){
+    .side-profile{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:843px){
     .active-page{
         display: none;
     }
