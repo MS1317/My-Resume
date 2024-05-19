@@ -43,7 +43,7 @@ window.onload = function() {
 
     function loadContent(page,event) {
         // Check if the event object exists and if the link is being opened in a new tab
-        if (event && event.ctrlKey || event.metaKey) {
+        if (event) {
             console.log("click event triggered")
             // If the link is being opened in a new tab, allow default behavior (navigation to the link's href)
             return true;
@@ -62,7 +62,11 @@ window.onload = function() {
                     document.getElementById("page-changer").innerHTML = this.responseText;
                     // Update the URL without causing a page refresh
                     history.pushState({page: page}, null, '?page=' + page);
-        
+
+                    // Check if $cardData is populated correctly
+                    var cardDataExists = this.responseText.includes("service-card");
+                    console.log("$cardData exists: ", cardDataExists);
+
                     // Update the active page dynamically
                     var activePageLinks = document.querySelectorAll('.sidebar-content a');
                     activePageLinks.forEach(function(link) {
@@ -84,12 +88,17 @@ window.onload = function() {
                      document.getElementById("page-changer").classList.remove('fade-out');
                      // Change the timeout value according to your transition duration
              
+                     console.log("Page content loaded successfully for: " + page);
+                }
+                else if(this.readyState==4){
+                    // Debugging step: Log errors if the content loading fails
+                    console.error("Failed to load content for: " + page + ". Status: " + this.status);
                 }
                 closeNav();
             };
 
-            // Use AJAX to fetch the content of the selected page
-            xhttp.open("GET", "pages/" + page + ".php", true);
+            // Use a cache-busting query parameter to ensure fresh content
+            xhttp.open("GET", "pages/" + page + ".php?timestamp=" + new Date().getTime(), true);
             xhttp.send();
         }
 }

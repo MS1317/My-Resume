@@ -1,5 +1,4 @@
       <!-- Hero Section -->
-               <?php include 'fetch_data.php';?>
                <div id="intro-overlay" class="intro-overlay">
                   <div id="hero-sec" class="hero-sec">
                      <div id="hero-overlay" class="hero-overlay">
@@ -39,9 +38,9 @@
          <div class="page-content services pt-0">   
             <!-- Service Section -->
             <section class="services-sec">
-               <div class="service-sec-content">
-
-                  <?php foreach($cardData as $data):?>
+               <?php require $_SERVER['DOCUMENT_ROOT'] . '/mscv/fetch_data.php'; ?>
+                  <?php if (!empty($cardData)) {
+                    foreach($cardData as $data): ?>
                      <div class="service-card">
                         <div class="serv-icon">
                            <img class="serv-img" src="<?php echo $data["icon_src"]; ?>" alt="">
@@ -50,7 +49,13 @@
                         <h5> <?php echo $data["title"]; ?></h5>
                         <p> <?php echo $data["description"]; ?></p>
                      </div>
-                  <?php endforeach; ?>
+                  <?php endforeach;
+                  }
+
+                  else{
+                     echo "No Data Found";
+                  }
+                  ?>
                </div>
             </section>
          </div>

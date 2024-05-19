@@ -1,15 +1,15 @@
 <?php
-    include("db.php");
+    require("db.php");
 ?>
 
 <?php
-    include("header.php");
+    require("header.php");
 ?>
 
 <?php
-    include("body.php");
+    require("body.php");
 ?>
 
 <?php
-    include("footer.php");
+    require("footer.php");
 ?>

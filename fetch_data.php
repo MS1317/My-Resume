@@ -1,5 +1,5 @@
 <?php
-
+require "db.php";
 // Fetch card data from the database
 $sql = "SELECT * FROM service_cards";
 $result = $conn->query($sql);
