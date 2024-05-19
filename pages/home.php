@@ -38,6 +38,7 @@
          <div class="page-content services pt-0">   
             <!-- Service Section -->
             <section class="services-sec">
+               <div class="service-content">
                <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
                   <?php if (!empty($cardData)) {
                     foreach($cardData as $data): ?>
@@ -48,6 +49,7 @@
                         </div>
                         <h5> <?php echo $data["title"]; ?></h5>
                         <p> <?php echo $data["description"]; ?></p>
+                        <a href="/services/'.''">View more</a>
                      </div>
                   <?php endforeach;
                   }
@@ -56,6 +58,6 @@
                      echo "No Data Found";
                   }
                   ?>
-               </div>
+                  </div>
             </section>
          </div>

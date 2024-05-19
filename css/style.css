@@ -56,8 +56,517 @@ hr{
     padding: 105px 20px;
 }
 
+/*-------------------------------------------------- Preloader --------------------------------------------------*/
 
-
+:root {
+    --hue: 223;
+    --bg: hsl(var(--hue),10%,90%);
+    --fg: hsl(var(--hue),10%,10%);
+    --trans-dur: 0.3s;
+    /* font-size: calc(28px + 32 * (100vw - 280px) / 3560); */
+  }
+  
+  .preload {
+    /* background-color: var(--bg); */
+    color: var(--fg);
+    font: 1em/1.5 sans-serif;
+    height: 100vh;
+    transition: background-color var(--trans-dur), color var(--trans-dur);
+    align-content: center;
+  }
+  
+  .device {
+    position: relative;
+    width: 4em;
+    height: 4em;
+  }
+  .device__a, .device__a-1, .device__a-2, .device__b, .device__c, .device__d, .device__e, .device__f, .device__g {
+    animation: device-a 3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    position: absolute;
+    transition: background-color var(--trans-dur), box-shadow var(--trans-dur);
+  }
+  .device__a, .device__d, .device__e {
+    background-color: hsl(var(--hue), 10%, 70%);
+    box-shadow: 0 0 0 0.25em inset;
+  }
+  .device__a {
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("IMG_20240105_222611_375.jpg"); */
+    border-radius: 0.375em;
+    top: 0;
+    width: 4em;
+    height: 2.5em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .poppins-semibold{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .powered{
+    color: #8c8c8e;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    margin: 20px 0px 0px;
+  }
+  .powered a{
+    text-decoration: none;
+  }
+  .powered a span{
+    color: white;
+  }
+  .powered a{
+    color: red;
+  }
+  .device__a-1, .device__a-2 {
+    visibility: hidden;
+  }
+  .device__a-1 {
+    animation-name: device-a-1;
+    top: 2.25em;
+    left: 1.5em;
+    width: 1em;
+    height: 0.25em;
+  }
+  .device__a-2 {
+    animation-name: device-a-2;
+    top: 0.625em;
+    right: 0;
+    width: 0.25em;
+    height: 0.75em;
+  }
+  .device__a-1, .device__a-2, .device__b, .device__c, .device__f, .device__g {
+    background-color: var(--fg);
+    border-radius: 0.125em;
+  }
+  .device__b {
+    animation-name: device-b;
+    top: 2.25em;
+    left: 1.875em;
+    width: 0.25em;
+    height: 1em;
+  }
+  .device__c {
+    animation-name: device-c;
+    top: 3em;
+    left: 1em;
+    width: 2em;
+    height: 0.25em;
+  }
+  .device__d, .device__e {
+    left: 1.25em;
+    width: 1.5em;
+    height: 0.875em;
+    visibility: hidden;
+  }
+  .device__d {
+    animation-name: device-d;
+    border-radius: 0.375em 0.375em 0 0;
+    top: 0.75em;
+  }
+  .device__e {
+    animation-name: device-e;
+    border-radius: 0 0 0.375em 0.375em;
+    top: 1.625em;
+  }
+  .device__f, .device__g {
+    filter: blur(0.375em);
+    bottom: 0;
+    height: 0.25em;
+  }
+  .device__f {
+    animation-name: device-f;
+    opacity: 0.5;
+    left: 1em;
+    width: 2em;
+  }
+  .device__g {
+    animation-name: device-g;
+    opacity: 0;
+    left: 0;
+    width: 4em;
+  }
+  
+  img {
+    margin: 0 auto;
+    width: 20%;
+    max-width: -webkit-fill-available;
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue),10%,10%);
+      --fg: hsl(var(--hue),10%,90%);
+    }
+    .device__a, .device__d, .device__e {
+      background-color: hsl(var(--hue), 10%, 30%);
+    }
+  }
+  /* Animations */
+  @keyframes device-a {
+    from, to {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      left: 0;
+      width: 4em;
+      height: 2.5em;
+      transform: translateY(0);
+    }
+    12.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 0;
+      width: 4em;
+      height: 2.5em;
+      transform: translateY(1.5em);
+    }
+    25% {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      left: 0;
+      width: 4em;
+      height: 2.5em;
+      transform: translateY(0.375em);
+    }
+    37.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 0;
+      width: 4em;
+      height: 2.5em;
+      transform: translateY(1.5em);
+    }
+    50% {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      left: 1em;
+      width: 2em;
+      height: 3em;
+      transform: translateY(0.125em);
+    }
+    62.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 1em;
+      width: 2em;
+      height: 3em;
+      transform: translateY(1em);
+    }
+    75% {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      left: 1em;
+      width: 2em;
+      height: 2em;
+      transform: translateY(0.625em);
+    }
+    87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 1em;
+      width: 2em;
+      height: 2em;
+      transform: translateY(1.375em);
+    }
+  }
+  @keyframes device-a-1 {
+    from {
+      animation-timing-function: steps(1, end);
+      left: 1.5em;
+      width: 1em;
+      transform: translateY(0);
+      visibility: hidden;
+    }
+    12.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 1.5em;
+      width: 1em;
+      transform: translateY(0);
+      visibility: visible;
+    }
+    25%, 37.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 1.5em;
+      width: 1em;
+      transform: translateY(-0.5em);
+      visibility: visible;
+    }
+    50%, 62.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 0.875em;
+      width: 0.25em;
+      transform: translateY(0);
+      visibility: visible;
+    }
+    75%, to {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 0.875em;
+      width: 0.25em;
+      transform: translateY(-0.5em);
+      visibility: hidden;
+    }
+  }
+  @keyframes device-a-2 {
+    from {
+      animation-timing-function: steps(1, end);
+      transform: translate(0, 0.375em);
+      visibility: hidden;
+    }
+    62.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translate(0, 0.375em);
+      visibility: visible;
+    }
+    75%, 87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translate(0.375em, 0);
+      visibility: visible;
+    }
+    to {
+      transform: translate(0, 0.25em);
+      visibility: visible;
+    }
+  }
+  @keyframes device-b {
+    from, to {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      transform: translateY(0);
+      visibility: visible;
+    }
+    10%, 12.5% {
+      animation-timing-function: steps(1, start);
+      transform: translateY(0.75em);
+      visibility: visible;
+    }
+    25% {
+      animation-timing-function: steps(1, start);
+      top: 2.25em;
+      left: 1.875em;
+      transform: translateY(0.75em);
+      visibility: hidden;
+    }
+    87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translateY(0.75em);
+      visibility: hidden;
+    }
+  }
+  @keyframes device-c {
+    from, to {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      transform: translateY(0);
+      visibility: visible;
+      width: 2em;
+    }
+    10%, 12.5% {
+      animation-timing-function: steps(1, start);
+      transform: translateY(0.75em);
+      visibility: visible;
+      width: 2em;
+    }
+    25% {
+      animation-timing-function: steps(1, start);
+      top: 3em;
+      left: 1em;
+      width: 2em;
+      transform: translateY(0.75em);
+      visibility: hidden;
+      width: 2em;
+    }
+    87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      left: 1.5em;
+      transform: translateY(0.75em);
+      visibility: hidden;
+      width: 1em;
+    }
+  }
+  @keyframes device-d {
+    from {
+      animation-timing-function: steps(1, end);
+      transform: translateY(0.25em);
+      visibility: hidden;
+    }
+    62.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translateY(0.25em);
+      visibility: visible;
+    }
+    75% {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      transform: translateY(-0.75em);
+    }
+    87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-0.75em);
+    }
+  }
+  @keyframes device-e {
+    from {
+      animation-timing-function: steps(1, end);
+      transform: translateY(1.5em);
+      visibility: hidden;
+    }
+    62.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translateY(1.5em);
+      visibility: visible;
+    }
+    75% {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      transform: translateY(0.75em);
+    }
+    87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      transform: translateY(1.5em);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes device-f {
+    from {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      filter: blur(0.375em);
+    }
+    12.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      filter: blur(0.1875em);
+      opacity: 0.5;
+    }
+    25%, to {
+      filter: blur(0.375em);
+      opacity: 0;
+    }
+  }
+  @keyframes device-g {
+    from, 12.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      background-color: var(--fg);
+      filter: blur(0.1875em);
+      opacity: 0;
+    }
+    25% {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      background-color: var(--fg);
+      filter: blur(0.375em);
+      opacity: 0.5;
+    }
+    37.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      filter: blur(0.1875em);
+      opacity: 0.5;
+      left: 0;
+      width: 4em;
+    }
+    50%, 75%, to {
+      animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+      filter: blur(0.375em);
+      opacity: 0.5;
+      left: 1em;
+      width: 2em;
+    }
+    62.5%, 87.5% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+      filter: blur(0.1875em);
+      opacity: 0.5;
+      left: 1em;
+      width: 2em;
+    }
+  }
+  
+  
+.preloader{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Preloader container */
+  .preloader-container {
+      column-gap: 2%;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      overflow: hidden;
+  }
+  
+  /* Slice container styling */
+  .slice-container {
+    z-index: 999999;
+    background-color: var(--bg);
+    padding: 0px 10px;
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slice-left {
+      justify-content: flex-end;
+      left: 0;
+  }
+  
+  .slice-right {
+      justify-content: flex-start;
+    right: 0;
+  }
+  
+  /* Device styling */
+  .device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Keyframes for exit animation */
+  @keyframes device-exit {
+    to {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  
+  /* Exit class */
+  .device.exit {
+    animation: device-exit 0.5s forwards; /* Adjust duration as needed */
+  }
+  
+  /* Keyframes for slice animation */
+  @keyframes slice-exit-left {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slice-exit-right {
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Slice exit classes */
+  .slice-exit-left {
+    animation: slice-exit-left 1s forwards; /* Adjust duration as needed */
+  }
+  
+  .slice-exit-right {
+    animation: slice-exit-right 1s forwards; /* Adjust duration as needed */
+  }
 /*-------------------------------------------------- Sidenav Start --------------------------------------------------*/
 
 .side-navbar{
@@ -416,6 +925,8 @@ table{
 }
 
 td.details-head {
+
+  color: white;
     float: left;
     font-weight: 600;
 }
@@ -759,12 +1270,13 @@ ul.skills li.more span:hover {
 }
 
 .service-card {
-    transition: background .8s, color .8s; /* Apply transition to background and color */
     padding: 30px;
     background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
     color: white; /* Set initial text color */
+    transition: all 0.8s; /* Apply transition to the background property */
+
 }
-.service-sec-content{
+.service-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -825,6 +1337,7 @@ ul.skills li.more span:hover {
 }
 
 .service-card:hover {
+    transition: all 0.8s;
     background: linear-gradient(57deg, #ffffff 0%, #2b2b35 111%);
     color: black; /* Change text color on hover */
 }
