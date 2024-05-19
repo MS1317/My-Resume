@@ -46,13 +46,13 @@ function hidePreloader() {
 
     // Remove the preloader container after the animation completes
     sliceLeft.addEventListener('animationend', () => {
-
+        document.querySelector('.slice-container').remove();
     // document.querySelector('.preload').remove();
     });
 }
 
 // Simulate the preloader being hidden after content is loaded
 window.addEventListener('load', () => {
-    setTimeout(hidePreloader, 4000); // Adjust the timeout as needed
+    setTimeout(hidePreloader, 900); // Adjust the timeout as needed
 });
 </script>
