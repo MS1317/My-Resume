@@ -505,7 +505,7 @@ hr{
   /* Slice container styling */
   .slice-container {
     z-index: 999999;
-    background-color: var(--bg);
+    background-color: rgb(25 25 35);
     padding: 0px 10px;
     width: 50%;
     position: absolute;
@@ -832,6 +832,7 @@ hr{
 .side-profile {
     background-color: #20202a;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     /* min-height: 480px; */
     height: 100%;
