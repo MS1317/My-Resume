@@ -3,6 +3,6 @@
 if ($_SERVER['SERVER_NAME'] === 'localhost') {
     define('BASE_PATH', '/mscv'); // Local environment
 } else {
-    define('BASE_PATH', '/subdomain/mscv'); // Production environment
+    define('BASE_PATH', '..'); // Production environment
 }
 ?>
