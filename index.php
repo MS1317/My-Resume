@@ -36,7 +36,7 @@
 
     require("footer.php");
 ?>
-<!-- <script>
+<script>
 // Function to trigger the exit animation and remove the preloader
 function hidePreloader() {
     const sliceLeft = document.querySelector('.slice-left');
@@ -55,4 +55,4 @@ function hidePreloader() {
 window.addEventListener('load', () => {
     setTimeout(hidePreloader, 4000); // Adjust the timeout as needed
 });
-</script> -->
+</script>
