@@ -1271,7 +1271,7 @@ ul.skills li.more span:hover {
 }
 
 .service-card {
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     padding: 30px;
     background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
     color: white; /* Set initial text color */
@@ -1279,6 +1279,7 @@ ul.skills li.more span:hover {
 
 }
 .service-content{
+  flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
