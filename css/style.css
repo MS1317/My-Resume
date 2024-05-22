@@ -67,6 +67,7 @@ hr{
   }
   
   .preload {
+    overflow: hidden;
     /* background-color: var(--bg); */
     color: var(--fg);
     font: 1em/1.5 sans-serif;
@@ -1271,7 +1272,7 @@ ul.skills li.more span:hover {
 }
 
 .service-card {
-    /* flex-basis: 50%; */
+    flex-basis: 49%;
     padding: 30px;
     background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
     color: white; /* Set initial text color */
@@ -1308,9 +1309,9 @@ ul.skills li.more span:hover {
 
 .big-circle{
     transition: all .8s;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(57deg, #ffffff 0%, #2b2b35 111%);
+    width: 30px;
+    height: 30px;
+    background: red;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -1328,20 +1329,20 @@ ul.skills li.more span:hover {
 }
 
 .service-card:hover .big-circle{
-    transition: all .8s;
-    transform: scale(2.2);
-    left: 9px;
-    top: 9px;
+  transition: all .5s;
+  transform: scale(2.6);
+  left: 14px;
+  top: 13px;
 }
 
 .service-card:hover .big-circle{
-    transition: all .8s;
-    background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
+    transition: all .5s;
+    background: red
 }
 
 .service-card:hover {
     transition: all 0.8s;
-    background: linear-gradient(57deg, #ffffff 0%, #2b2b35 111%);
+    background: white;
     color: black; /* Change text color on hover */
 }
 

@@ -60,6 +60,10 @@
         margin: unset;
     }
 
+    .service-card{
+        flex-basis: 100%;
+    }
+
     #main{
         max-height: 100vh;
     }
