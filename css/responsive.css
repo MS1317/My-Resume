@@ -24,12 +24,6 @@
     }
 }
 
-@media (max-width:452px){
-    .hero-content{
-        padding: 40px 20px!important;
-    }
-}
-
 @media (max-width:600px){
     .hero-img{
         display: none;

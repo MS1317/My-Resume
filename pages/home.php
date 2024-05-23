@@ -55,7 +55,7 @@ if (!defined('BASE_PATH')) {
                         </div>
                         <h5> <?php echo $data["title"]; ?></h5>
                         <p> <?php echo $data["description"]; ?></p>
-                        <a href="?page=services/<?php echo $data['page'];?>" onclick="loadContent('services/<?php echo $data['page']; ?>',event)">View more</a>
+                        <!-- <a href="?page=services/<?php echo $data['page'];?>" onclick="loadContent('services/<?php echo $data['page']; ?>',event)">View more</a> -->
                      </div>
                   <?php endforeach;
                   }
