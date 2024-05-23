@@ -1,3 +1,9 @@
+<?php
+// Ensure config.php is included either directly or via index.php
+if (!defined('BASE_PATH')) {
+    require('../config.php');  // Adjust the path as needed based on your directory structure
+}
+?>
       <!-- Hero Section -->
                <div id="intro-overlay" class="intro-overlay">
                   <div id="hero-sec" class="hero-sec">

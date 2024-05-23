@@ -1,41 +1,57 @@
 <?php
-    require("config.php");
+    require "config.php";
     require("db.php");
+    // Set the cookie if it's not already set
+    if (!isset($_COOKIE['preloaderShown'])) {
+        setcookie('preloaderShown', 'true', 0, '/');
+    }
     require("header.php");
+
+    // Check if preloaderShown is true
+    if ($_COOKIE['preloaderShown'] === 'true') {
+        // Only include body.php
+        require("body.php");
+    } else {
+    // Include the entire content
 ?>
 <div class="preload">
-    <div class="preloader">
-        <div class="preloader-container">
-            <div class="slice-container slice-left">
-                <div class="device">
-                    <div class="device__a">
+<div class="preloader">
+    <div class="preloader-container">
+        <div class="slice-container slice-left">
+            <div class="device">
+                <div class="device__a">
                     <span class="poppins-semibold">MS</span>
                     <div class="device__a-1"></div>
                     <div class="device__a-2"></div>
-                    </div>
-                    <div class="device__b"></div>
-                    <div class="device__c"></div>
-                    <div class="device__d"></div>
-                    <div class="device__e"></div>
-                    <div class="device__f"></div>
-                    <div class="device__g"></div>
                 </div>
+                <div class="device__b"></div>
+                <div class="device__c"></div>
+                <div class="device__d"></div>
+                <div class="device__e"></div>
+                <div class="device__f"></div>
+                <div class="device__g"></div>
             </div>
-                <?php
-                    require("body.php");
-                ?>
-            <div class="slice-container slice-right">
-                <div>
-                    <p class="powered">Powered by <a href="https://techituber.com/"><span>Techi</span>Tuber</a></p>
-                </div>
+        </div>
+
+        <div class="content">
+            <?php
+                require("body.php"); // Include the entire content here
+            ?>
+        </div>
+
+        <div class="slice-container slice-right">
+            <div>
+                <p class="powered">Powered by <a href="https://techituber.com/"><span>Techi</span>Tuber</a></p>
             </div>
         </div>
     </div>
 </div>
+</div>
 <?php
-
-    require("footer.php");
+}
+require("footer.php");  
 ?>
+
 <script>
 // Function to trigger the exit animation and remove the preloader
 function hidePreloader() {
@@ -47,12 +63,12 @@ function hidePreloader() {
     // Remove the preloader container after the animation completes
     sliceLeft.addEventListener('animationend', () => {
         document.querySelector('.slice-container').remove();
-    // document.querySelector('.preload').remove();
     });
 }
 
 // Simulate the preloader being hidden after content is loaded
 window.addEventListener('load', () => {
-    setTimeout(hidePreloader, 900); // Adjust the timeout as needed
+        setTimeout(hidePreloader, 1200); // Adjust the timeout as needed
 });
+
 </script>
