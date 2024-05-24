@@ -1420,3 +1420,18 @@ ul.skills li.more span:hover {
       --num: 50;
     }
   }
+  /* Youtube Widget */
+ #ytContainer{
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  padding: 20px 10px;
+  justify-content: space-evenly;
+ }
+
+ .video{
+  display: flex;
+  flex-basis: max-content;
+  justify-content: center;
+ }
