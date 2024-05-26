@@ -1435,3 +1435,83 @@ ul.skills li.more span:hover {
   flex-basis: max-content;
   justify-content: center;
  }
+
+ .PIz4HixPF9mDMQqIRfcD{
+  display: none;
+ }
+
+ .dESnNL{
+  background-color: transparent!important;
+  padding-top: 39px!important;
+  position: absolute!important;
+ }
+
+ .HeaderInfoWrapper-eGrHkR.gmDMag{
+  padding-top: 0px;
+ }
+
+ .ChannelTitle-eHxIJg.ditOBJ{
+  margin-top: 0px;
+  color: white;
+ }
+
+ .ChannelAvatar-CqiYR.ecRsdl{
+  width: unset;
+ }
+
+ .gmDMag{
+  justify-content: center;
+  color: white;
+ }
+
+ .ghYOYS{
+  background-color: unset!important;
+  box-shadow: unset!important;
+  border-radius: unset!important;
+ }
+
+ .jRclRz{
+  border-radius:1rem ;
+ }
+
+ .lcnaXe{
+  -webkit-line-clamp: 2!important;
+ }
+
+ .flNjsu{
+  background-color: unset;
+ }
+
+ .InfoText-fuhEiX.dgeMgE{
+  display: none;
+ }
+
+ .Captions-jRkLRZ.flNjsu{
+  color: white;
+ }
+
+ .dHPjmB{
+  width: 100%!important;
+  height: 100vh!important;
+  background-color: rgba(0, 0, 0, 0.8)!important;
+  position: absolute!important;
+  top: 0!important;
+  left: -25%!important;
+ }
+
+ .ytp-watermark.yt-uix-sessionlink.ytp-watermark-small{
+  display: none!important;
+ }
+
+ .video-wrapper{
+  font-family:'Poppins', sans-serif;
+  column-gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.video-title{
+  flex-basis: 50%;
+}

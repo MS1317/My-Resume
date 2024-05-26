@@ -72,8 +72,8 @@ function loadContent(page,event) {
             history.pushState({page: page}, null, '?page=' + page);
 
             // Check if $cardData is populated correctly
-            var cardDataExists = this.responseText.includes("service-card");
-            console.log("$cardData exists: ", cardDataExists);
+            // var cardDataExists = this.responseText.includes("service-card");
+            // console.log("$cardData exists: ", cardDataExists);
 
             // Update the active page dynamically
             var activePageLinks = document.querySelectorAll('.sidebar-content a');
