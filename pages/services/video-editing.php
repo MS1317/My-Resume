@@ -1,5 +1,10 @@
 <!-- <div id="ytContainer"></div>
 <div id="pagination"></div> -->
+<?php
+if (!defined('BASE_PATH')) {
+    require('../../config.php');  // Adjust the path as needed based on your directory structure
+}
+?>
 
 <div class="page-content py-3">
 <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
