@@ -36,17 +36,15 @@
     .hero-content {
     width: 100%!important;
 }
-}
 
-@media (max-width:600px){
-    .hero-content{
+.hero-content{
     padding: 50px 0px!important;
     text-align: center;
     .hero-btn{
         margin-left: auto;
         margin-right: auto;
     }
-    }
+}
 }
 
 @media (max-width:769px){
