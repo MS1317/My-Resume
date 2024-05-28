@@ -60,7 +60,7 @@ if (!defined('BASE_PATH')) {
 
 </style>
 
-<div class="page-content intro-overlay">
+<div id="video-editing" class="page-content intro-overlay">
     <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
     <?php if(!empty($lVideoData)){
         $lVideo = $lVideoData[0];
