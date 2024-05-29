@@ -223,3 +223,9 @@
         font-size: calc(1.075rem + 1.5vw)!important;
     }
 }
+
+@media (max-width:1053px){
+    .video-wrapper{
+        flex-wrap: wrap;
+    }
+}

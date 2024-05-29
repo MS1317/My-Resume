@@ -1510,16 +1510,43 @@ ul.skills li.more span:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .video-title{
-  flex-basis: content;
+  /* flex-basis: content; */
 }
 
 #video-editing.page-content{
+  text-align: unset;
   padding-bottom: 105px!important;
 }
+
+#video-editing{
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
+
+.sec-heading{
+  font-family:'Poppins', sans-serif;
+}
+
+.video-grid1{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-content: center;
+}
+
+.iframe{
+  flex-basis: 33%;
+}
+
+.video-grid1,.video-grid2{
+  margin-bottom: 20px;
+}
+
 
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{

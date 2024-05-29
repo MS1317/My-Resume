@@ -5,62 +5,8 @@ if (!defined('BASE_PATH')) {
     require('../../config.php');  // Adjust the path as needed based on your directory structure
 }
 ?>
-<style>
 
-/* Video container styles */
-#latestVideoContainer {
-    width: 100%;
-    max-width: 600px; /* Adjusted max-width for vertical video */
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-#latestVideo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.video-title {
-    text-align: center;
-    margin-bottom: 20px;
-    transform: translateX(100%);
-    animation: slideIn 1s ease-out forwards; /* Slide in animation */
-}
-
-
-/* Responsive iframe for vertical video */
-.vertical-video {
-    border: none;
-    transform: translateX(100%);
-    animation: slideIn 1s ease-out forwards; /* Slide in animation */
-}
-
-@media (min-width: 600px) {
-    .vertical-video {
-        height: 600px;
-    }
-}
-
-@media (min-width: 800px) {
-    .vertical-video {
-        height: 750px;
-    }
-}
-
-/* Animation keyframes */
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-</style>
-
-<div id="video-editing" class="page-content intro-overlay">
+<section id="video-editing" class="page-content intro-overlay">
     <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
     <?php if(!empty($lVideoData)){
         $lVideo = $lVideoData[0];
@@ -77,7 +23,20 @@ if (!defined('BASE_PATH')) {
         </div>
     </div>
     <?php } ?>
-</div>
+
+    <div class="other-videos">
+        <h2 class="sec-heading">My best work till date</h2>
+        <div class="video-grid1">
+            <iframe class="iframe" src="https://www.youtube.com/embed/jY0Wf94uVWQ" title="1 Year Experience with Asus Tuff A15 | A15 in 2023 | A15 Budget Gaming Laptop |TechiTuber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="iframe" src="https://www.youtube.com/embed/nFUHkxEuEts" title="OnePlus 10R 5G Review||TechiTuber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="iframe" src="https://www.youtube.com/embed/aY7OxBaWFsU" title="How to get free google photos storage 2022||TechiTuber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-grid2">
+        <iframe class="iframe" width="315" height="560" src="https://www.youtube.com/embed/j3mIb8BjyOg" title="Instagram Body Frame Filter for tracking your body movements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
 
 
 
