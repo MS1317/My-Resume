@@ -49,13 +49,16 @@ if (!defined('BASE_PATH')) {
                   <?php if (!empty($cardData)) {
                     foreach($cardData as $data): ?>
                      <div class="service-card">
-                        <div class="serv-icon">
-                           <img class="serv-img" src="<?php echo $data["icon_src"]; ?>" alt="">
-                        <div class="big-circle"></div>
+                        <div>
+                           <div class="serv-icon">
+                              <img class="serv-img" src="<?php echo $data["icon_src"]; ?>" alt="">
+                           <div class="big-circle"></div>
+                           </div>
+                           <h5> <?php echo $data["title"]; ?></h5>
+                           <p> <?php echo $data["description"]; ?></p>
                         </div>
-                        <h5> <?php echo $data["title"]; ?></h5>
-                        <p> <?php echo $data["description"]; ?></p>
-                        <a href="?page=services/<?php echo $data['page'];?>" onclick="loadContent('services/<?php echo $data['page']; ?>',event)">View more</a>
+
+                        <button href="?page=services/<?php echo $data['page'];?>" onclick="loadContent('services/<?php echo $data['page']; ?>',event)">View more</button>
                      </div>
                   <?php endforeach;
                   }

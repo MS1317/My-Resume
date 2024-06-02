@@ -15,8 +15,8 @@ if (!defined('BASE_PATH')) {
         <div id="latestVideo">
             <div class="video-wrapper">                
                 <div class="video-title">
-                    <h2>Take a look at my editing skills in my latest video</h2>
-                    <p><?php echo $lVideo['v_title']; ?></p>
+                    <h2>My latest video showcasing my skills</h2>
+                    <!-- <p><?php echo $lVideo['v_title']; ?></p> -->
                 </div>
                 <iframe width="315" height="560" src="<?php echo $lVideo["iframe_src"]; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -24,18 +24,18 @@ if (!defined('BASE_PATH')) {
     </div>
     <?php } ?>
 
-    <div class="other-videos">
-        <h2 class="sec-heading">My best work till date</h2>
-        <div class="video-grid1">
-            <iframe class="iframe" src="https://www.youtube.com/embed/jY0Wf94uVWQ" title="1 Year Experience with Asus Tuff A15 | A15 in 2023 | A15 Budget Gaming Laptop |TechiTuber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe class="iframe" src="https://www.youtube.com/embed/nFUHkxEuEts" title="OnePlus 10R 5G Review||TechiTuber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe class="iframe" src="https://www.youtube.com/embed/aY7OxBaWFsU" title="How to get free google photos storage 2022||TechiTuber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+    <div class="other-videos-sec">
+        <h2>More of my work</h2>
+        <div class="videos">
+            <iframe width="" height="" src="https://www.youtube.com/embed/jY0Wf94uVWQ?si=vuAG6KWpioM_t5l7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nFUHkxEuEts?si=xlI45f-tDarT5fUb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <div class="video-grid2">
-        <iframe class="iframe" width="315" height="560" src="https://www.youtube.com/embed/j3mIb8BjyOg" title="Instagram Body Frame Filter for tracking your body movements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aY7OxBaWFsU?si=gSJe8fQI02UDbbAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
+
+    
 </section>
 
 
