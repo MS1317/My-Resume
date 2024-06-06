@@ -10,5 +10,29 @@
                 </div>
             </div>
         </div>
+
+        <div class="web-card">
+            <div class="web-card-background">
+                <div class="web-type">
+                    HTML
+                </div>
+            </div>
+        </div>
+
+        <div class="web-card">
+            <div class="web-card-background">
+                <div class="web-type">
+                    HTML
+                </div>
+            </div>
+        </div>
+
+        <div class="web-card">
+            <div class="web-card-background">
+                <div class="web-type">
+                    HTML
+                </div>
+            </div>
+        </div>
     </div>
 </section>

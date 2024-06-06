@@ -1530,16 +1530,32 @@ ul.skills li.more span:hover {
 }
 
 .web-card {
+  width: 100%;
+  max-width: 150px;
+  overflow: hidden;
   position: relative;
   background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
+  transition: all 0.8s;
+}
+
+.web-card:hover{
+  width: 100%;
+  max-width: 200px;
+  transition: all 0.8s;
+}
+
+.web-card:hover .web-card-background{
+  background-position: 56%;
+  transition: all 0.8s;
+  padding: 115px 100px;
 }
 
 .web-card-background{
-  padding: 115px;
-  background-image: url("../assets/web/html-5.jpg");
-  background-size: 217%;
-  background-position: bottom;
+  padding: 115px 75px;
+  background-image: url("../assets/web/html-5-svgrepo-com.svg");
+  background-position: center;
   background-repeat: no-repeat;
+  transition: all 0.8s;
 }
 
 .web-card img {
@@ -1552,6 +1568,11 @@ ul.skills li.more span:hover {
   position: absolute;
   bottom: 0;
   padding: 15px;
+}
+
+.web-selector{
+  gap: 15px;
+  display: flex;
 }
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{
