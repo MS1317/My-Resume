@@ -1,3 +1,9 @@
+@media (max-width:355px){
+    .web-choose{
+        height: unset!important;
+    }
+}
+
 @media (max-height:450px){
     .sidenav{padding-top: 15px;}
     .sidenav a{font-size: 18px;}
@@ -58,6 +64,10 @@
 
     #main{
         max-height: 100vh;
+    }
+
+    .web-choose{
+        margin: 50px 0px 0px;
     }
 }
 

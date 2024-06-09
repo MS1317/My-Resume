@@ -9,8 +9,14 @@ $result = $conn->query($cards);
 $latestVideo = "SELECT * FROM videos";
 $result2 = $conn->query($latestVideo); 
 
+// Fetch web technology data from the database
+$webTechnology = "SELECT * FROM websites";
+$result3 = $conn->query($webTechnology); 
+
 $cardData = [];
 $lVideoData = [];
+$webTechnology = [];
+
 
 // Check if there are any rows returned for service cards
 if ($result->num_rows > 0) {
@@ -28,6 +34,15 @@ if ($result2->num_rows > 0) {
     }
 } else {
     echo "0 Results for videos";
+}
+
+// Check if there are any rows returned for web technology
+if ($result3->num_rows > 0) {
+    while ($row = $result3->fetch_assoc()) {
+        $webTechnology[] = $row;
+    }
+} else {
+    echo "0 Results for web technology";
 }
 
 // Close the database connection

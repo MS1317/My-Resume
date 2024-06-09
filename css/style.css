@@ -1512,6 +1512,7 @@ ul.skills li.more span:hover {
 
 /* ----------------------------------------------Web----------------------------------------------*/
 .web-choose{
+  padding: 40px 20px;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -1530,8 +1531,8 @@ ul.skills li.more span:hover {
 }
 
 .web-card {
-  width: 100%;
   max-width: 150px;
+  flex-grow: 1;
   overflow: hidden;
   position: relative;
   background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
@@ -1539,8 +1540,8 @@ ul.skills li.more span:hover {
 }
 
 .web-card:hover{
-  width: 100%;
   max-width: 200px;
+  flex-grow: 3;
   transition: all 0.8s;
 }
 
@@ -1551,8 +1552,8 @@ ul.skills li.more span:hover {
 }
 
 .web-card-background{
+  background-size: contain;
   padding: 115px 75px;
-  background-image: url("../assets/web/html-5-svgrepo-com.svg");
   background-position: center;
   background-repeat: no-repeat;
   transition: all 0.8s;
@@ -1573,6 +1574,8 @@ ul.skills li.more span:hover {
 .web-selector{
   gap: 15px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{
