@@ -1565,10 +1565,13 @@ ul.skills li.more span:hover {
 }
 
 .web-type{
+  background-image: linear-gradient(180deg, #D61D1D00 0%, #05100B 100%);
+  width: -webkit-fill-available;
   left: 0;
   position: absolute;
   bottom: 0;
   padding: 15px;
+  text-transform: uppercase;
 }
 
 .web-selector{

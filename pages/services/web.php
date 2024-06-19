@@ -15,8 +15,10 @@ if (!defined('BASE_PATH')) {
         <!-- <a href="<?php echo $technology["web-link"]; ?>"> -->
             <div class="web-card">
                 <div class="web-card-background" style="background-image:url('assets/web/<?php echo $technology["web-icon"]; ?>')">
-                    <div class="web-type">
-                       <?php echo $technology["web-technology"];?>
+                    <div class="title-bg">
+                        <div class="web-type">
+                            <?php echo $technology["web-technology"];?>
+                        </div>
                     </div>
                 </div>
             </div>
