@@ -31,9 +31,9 @@ if (!in_array($page, $valid_pages)) {
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
             <a id="home" href="?page=home" onclick="loadContent('home',event)">Home</a>
             <a id="about" href="?page=about" onclick="loadContent('about',event)">About</a>
-            <a href="#">Services</a>
+            <!-- <a href="#">Services</a>
             <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#">Contact</a> -->
          </div>
       </div>
    </div> 
