@@ -21,11 +21,9 @@ if (!defined('BASE_PATH')) {
                                  </h6>
                               </div>
                               
-                              <button class="hero-btn">
-                                 <strong>
+                              <a href="#" class="hero-btn">
                                  Explore
-                                 </strong>
-                              </button>
+                              </a>
 
                               <span>
                                  <img class="hero-img" src="assets/images/Untitled-1.png" >
