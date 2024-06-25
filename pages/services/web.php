@@ -12,7 +12,7 @@ if (!defined('BASE_PATH')) {
     <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
     <?php if (!empty($webTechnology)) {
     foreach ($webTechnology as $technology): ?>
-        <!-- <a href="<?php echo $technology["web-link"]; ?>"> -->
+        <a href="<?php echo $technology["web-link"]; ?>">
             <div class="web-card">
                 <div class="web-card-background" style="background-image:url('assets/web/<?php echo $technology["web-icon"]; ?>')">
                     <div class="title-bg">
@@ -22,7 +22,7 @@ if (!defined('BASE_PATH')) {
                     </div>
                 </div>
             </div>
-        <!-- </a> -->
+        </a>
     <?php endforeach;
     }
     else {
