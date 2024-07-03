@@ -651,8 +651,9 @@ hr{
 }
 
 .active-page {
-    transform: rotate(90deg);
-    color: #818181;
+  text-wrap: nowrap;
+  transform: rotate(90deg);
+  color: #818181;
 }
 /*-------------------------------------------------- Sidenav End --------------------------------------------------*/
 
@@ -1535,9 +1536,9 @@ ul.skills li.more span:hover {
 
 /* ----------------------------------------------Web----------------------------------------------*/
 .web-choose{
-  padding: 40px 20px;
+  padding: 0px 20px;
   display: flex;
-  height: 100vh;
+  height: 96vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1598,7 +1599,7 @@ ul.skills li.more span:hover {
   bottom: 0;
   padding: 15px;
   text-transform: uppercase;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   color: white;
   font-weight: bold;
 }
@@ -1608,6 +1609,21 @@ ul.skills li.more span:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* ----------------------------------------------Websites---------------------------------------------- */
+
+.list-item{
+  display: flex;
+}
+
+.web-no{
+  flex-basis: 10%;
+}
+
+.list-item-title{
+  flex-basis: 90%;
+}
+
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{
   padding-left: 20px!important;

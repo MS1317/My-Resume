@@ -9,9 +9,14 @@ window.onload = function() {
     // If initialPage is not null, set it as the active page name
     if (initialPage) {
         console.log("Initial Page is available");
-        
-        var activePageName = initialPage.charAt(0).toUpperCase() + initialPage.slice(1); // Capitalize the first letter
-        console.log("Active Page Name", activePageName);
+
+          // Display active page name in active-page class
+          var pageParts=initialPage.split('/');
+          console.log("Page Parts",pageParts);
+          var activePageName = pageParts[pageParts.length - 1];
+          activePageName = activePageName.charAt(0).toUpperCase() + activePageName.slice(1); // Capitalize the first letter
+          console.log("Active Page Name",activePageName);
+          document.querySelector('.active-page p').textContent = activePageName;
         
         document.querySelector('.active-page p').textContent = activePageName;
         console.log("Setting the available initial page")
@@ -24,8 +29,15 @@ window.onload = function() {
 
         // Set the active page name
         console.log("Setting default page as active page");
-        var activePageName = initialPage.charAt(0).toUpperCase() + initialPage.slice(1); // Capitalize the first letter
-        console.log("Default page=",activePageName);
+        
+        
+        // Display active page name in active-page class
+        var pageParts=initialPage.split('/');
+        console.log("Page Parts",pageParts);
+        var activePageName = pageParts[pageParts.length - 1];
+        activePageName = activePageName.charAt(0).toUpperCase() + activePageName.slice(1); // Capitalize the first letter
+        console.log("Active Page Name",activePageName);
+        document.querySelector('.active-page p').textContent = activePageName;
 
         document.querySelector('.active-page p').textContent = activePageName;
 
@@ -68,12 +80,9 @@ function loadContent(page,event) {
             console.log("Successful response received");
             // Replace the content of the "content" div with the fetched content
             document.getElementById("page-changer").innerHTML = this.responseText;
+
             // Update the URL without causing a page refresh
             history.pushState({page: page}, null, '?page=' + page);
-
-            // Check if $cardData is populated correctly
-            // var cardDataExists = this.responseText.includes("service-card");
-            // console.log("$cardData exists: ", cardDataExists);
 
             // Update the active page dynamically
             var activePageLinks = document.querySelectorAll('.sidebar-content a');
@@ -86,17 +95,21 @@ function loadContent(page,event) {
             }
 
             // Display active page name in active-page class
-            var activePageName = page.charAt(0).toUpperCase() + page.slice(1); // Capitalize the first letter
+            var pageParts=page.split('/');
+            console.log("Page Parts",pageParts);
+            var activePageName = pageParts[pageParts.length - 1];
+            activePageName = activePageName.charAt(0).toUpperCase() + activePageName.slice(1); // Capitalize the first letter
+            console.log("Active Page Name",activePageName);
             document.querySelector('.active-page p').textContent = activePageName;
 
             // After loading the content, trigger the type animation again
             initializeTypeEffect();
 
             // Fade in the new content
-                document.getElementById("page-changer").classList.remove('fade-out');
-                // Change the timeout value according to your transition duration
+            document.getElementById("page-changer").classList.remove('fade-out');
+            // Change the timeout value according to your transition duration
         
-                console.log("Page content loaded successfully for: " + page);
+            console.log("Page content loaded successfully for: " + page);
         }
         else if(this.readyState==4){
             // Debugging step: Log errors if the content loading fails

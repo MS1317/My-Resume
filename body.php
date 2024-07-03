@@ -3,7 +3,7 @@
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 // Define an array of valid pages
-$valid_pages = ['home', 'about', 'services', 'clients', 'contact', 'services/video-editing','services/web'];
+$valid_pages = ['home', 'about', 'services', 'clients', 'contact', 'services/video-editing','services/web', 'service-detail/html','service-detail/php','service-detail/react','service-detail/wordpress'];
 
 // Check if the requested page is valid, otherwise default to 'home'
 if (!in_array($page, $valid_pages)) {

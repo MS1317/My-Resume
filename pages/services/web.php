@@ -12,7 +12,7 @@ if (!defined('BASE_PATH')) {
     <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
     <?php if (!empty($webTechnology)) {
     foreach ($webTechnology as $technology): ?>
-        <a href="<?php echo $technology["web-link"]; ?>">
+        <a href="?page=service-detail/<?php echo $technology["web-link"]; ?>" onclick="loadContent('service-detail/<?php echo $technology["web-link"]; ?>', event)">
             <div class="web-card">
                 <div class="web-card-background" style="background-image:url('assets/web/<?php echo $technology["web-icon"]; ?>')">
                     <div class="title-bg">
