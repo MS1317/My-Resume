@@ -71,6 +71,10 @@
     }
 }
 
+@media (max-width:700px){
+    
+}
+
 @media (min-width:601px) and (max-width:830px){
     .intro-sec
     .intro-overlay

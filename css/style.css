@@ -55,7 +55,7 @@ hr{
 
 .page-content{
     text-align: justify;
-    padding: 110px 20px;
+    padding: 20px 20px;
 }
 
 /*-------------------------------------------------- Preloader --------------------------------------------------*/
@@ -675,7 +675,7 @@ hr{
     color: #f1f1f1!important;
     padding: 0px;
     background-size: 100%;
-    background-image: url("../assets/images/bg2.jpg");
+    /* background-image: url("../assets/images/bg2.jpg"); */
     background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
@@ -1341,7 +1341,7 @@ ul.skills li.more span:hover {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 60px;
+    max-width: 50px;
     height: auto;
     filter: invert(97%) sepia(97%) saturate(13%) hue-rotate(186deg) brightness(103%) contrast(103%);
 }
@@ -1349,18 +1349,18 @@ ul.skills li.more span:hover {
 .service-card:hover .big-circle{
   transition: all .5s;
   transform: scale(2.6);
-  left: 14px;
-  top: 13px;
+  left: 10px;
+  top: 10px;
 }
 
 .service-card:hover .big-circle{
     transition: all .5s;
-    background: linear-gradient(to right, #f75050 0%, #f92525 51%, #f75050 100%);
+    background: linear-gradient(75deg, #434355 0%, #2c2c38 100%);
 }
 
 .service-card:hover {
     transition: all 0.8s;
-    background: white;
+    background: linear-gradient(97deg, #f64c4c 0%, #800505 100%);
   }
 
 .service-card{
@@ -1372,12 +1372,7 @@ ul.skills li.more span:hover {
 }
 
 .service-card h5{
-  mix-blend-mode: difference;
   font-weight: 900;
-}
-
-.service-card p{
-  mix-blend-mode: difference;
 }
 
 .service-card button {
@@ -1396,7 +1391,7 @@ ul.skills li.more span:hover {
   transition: background-position 0.5s ease, padding-left 0.5s ease;
   background-position: 113px 8px;
   padding-left: 0;
-  background-color: #f75050 ;
+  background: linear-gradient(75deg, #64646a 0%, #2b2b35 100%) ;
   color: white;
 } 
 /* Animated Numbers Stats */
@@ -1611,19 +1606,55 @@ ul.skills li.more span:hover {
 }
 
 /* ----------------------------------------------Websites---------------------------------------------- */
+.item-wrapper {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px solid #4a4a52;
+  transition: all 1s;
+  background-image: none;
+}
 
 .list-item{
+  gap: 10px;
   display: flex;
+  align-items: center;
+}
+
+.web-desc{
+  display: -webkit-box;
+  max-width: 550px;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }
 
 .web-no{
-  flex-basis: 10%;
+  transition: all 1s;
+  color: red;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .list-item-title{
-  flex-basis: 90%;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 0px  ;
 }
 
+.item-wrapper:hover{
+  background-image: linear-gradient(to right, #f75050 0%, #f43333  51%, #9d1717 100%);
+  cursor: pointer;
+}
+
+.item-wrapper:hover .web-no{
+  color: white;
+}
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{
   padding-left: 20px!important;
