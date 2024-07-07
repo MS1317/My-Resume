@@ -1375,7 +1375,7 @@ ul.skills li.more span:hover {
   font-weight: 900;
 }
 
-.service-card button {
+.service-card button{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none' /%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' fill='%23ffffff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 140px 8px;
@@ -1387,13 +1387,17 @@ ul.skills li.more span:hover {
   padding: 1px 7px 1px 7px;
 }
   
-.service-card:hover button {
+.service-card:hover button{
   transition: background-position 0.5s ease, padding-left 0.5s ease;
   background-position: 113px 8px;
   padding-left: 0;
   background: linear-gradient(75deg, #64646a 0%, #2b2b35 100%) ;
   color: white;
 } 
+
+.service-card:hover button{
+  padding-left: 7px!important;
+}
 /* Animated Numbers Stats */
 @property --num{
     syntax: "<integer>";
@@ -1637,12 +1641,12 @@ ul.skills li.more span:hover {
 .web-no{
   transition: all 1s;
   color: red;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .list-item-title{
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 0px  ;
 }
@@ -1653,7 +1657,18 @@ ul.skills li.more span:hover {
 }
 
 .item-wrapper:hover .web-no{
-  color: white;
+color: white;
+}
+
+.fa-arrow-right{
+  color: red;
+  transition: all 0.5s;
+  transform: rotate(320deg);
+}
+
+.item-wrapper:hover .fa-arrow-right{
+  color: unset;
+  transform: rotate(360deg);
 }
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{

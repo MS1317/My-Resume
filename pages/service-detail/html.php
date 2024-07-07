@@ -7,84 +7,22 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
 ?>
 <section class="page-content">
     <div class="web-list">
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
+        <?php if (!empty($htmlWebsites)) {
+            foreach($htmlWebsites as $htmlWebsite): ?>
+            <div class="item-wrapper">
+                <div class="list-item">
+                    <div class="web-no">01</div>
+                    <h3 class="list-item-title"><?php echo $htmlWebsite["name"]; ?></h3>
+                </div>
+                <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
+            <i class="view-more fa-solid fa-arrow-right"></i>
         </div>
+        <?php endforeach;
+        } 
 
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
-        <div class="item-wrapper">
-            <div class="list-item">
-                <span class="web-no">01</span>
-                <h3 class="list-item-title">Title</h3>
-            </div>
-            <div class="web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis enim placeat explicabo quaerat! Earum cumque, officia ullam minus nobis recusandae facere dolorem iure consectetur nostrum a voluptas voluptates aperiam quia.</div>
-            <div class="web-link">weblink</div>
-        </div>
+        else {
+            echo 'No data found';
+         }
+        ?>
     </div>
 </section>
