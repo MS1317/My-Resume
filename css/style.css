@@ -1291,6 +1291,7 @@ ul.skills li.more span:hover {
 
 .service-card {
     flex-basis: 49%;
+    text-decoration: none;
     padding: 30px;
     background: linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%);
     color: white; /* Set initial text color */
@@ -1648,7 +1649,8 @@ ul.skills li.more span:hover {
 .list-item-title{
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 0px  ;
+  margin-bottom: 0px;
+  display: inline;
 }
 
 .item-wrapper:hover{
@@ -1660,15 +1662,48 @@ ul.skills li.more span:hover {
 color: white;
 }
 
-.fa-arrow-right{
+.arrow-right{
   color: red;
   transition: all 0.5s;
   transform: rotate(320deg);
+  font-size: x-large;
 }
 
-.item-wrapper:hover .fa-arrow-right{
+.item-wrapper:hover .arrow-right{
   color: unset;
   transform: rotate(360deg);
+}
+
+.web-link{
+  color: unset;
+  text-decoration: none;
+}
+
+dialog{
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  background-image: linear-gradient(to right, #f75050 0%, #f43333  51%, #9d1717 100%);
+  color: white;
+  box-shadow: 3px 2px 5px #000000;
+}
+
+.backdrop{
+  transition: all 1s;
+  background-color: #000000a6;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal-desc{
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{

@@ -46,18 +46,17 @@ if (!defined('BASE_PATH')) {
                <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
                   <?php if (!empty($cardData)) {
                     foreach($cardData as $data): ?>
-                     <div class="service-card">
+                    <a class="service-card" href="?page=services/<?php echo $data['page'];?>" onclick="loadContent('services/<?php echo $data['page']; ?>',event)">
                         <div>
                            <div class="serv-icon">
                               <img class="serv-img" src="<?php echo $data["icon_src"]; ?>" alt="">
-                           <div class="big-circle"></div>
+                              <div class="big-circle"></div>
                            </div>
-                           <h5> <?php echo $data["title"]; ?></h5>
-                           <p> <?php echo $data["description"]; ?></p>
+                           <h5> <?php echo $data["title"]; ?> </h5>
+                           <p> <?php echo $data["description"]; ?> </p>
                         </div>
-
                         <button href="?page=services/<?php echo $data['page'];?>" onclick="loadContent('services/<?php echo $data['page']; ?>',event)">View more</button>
-                     </div>
+                    </a>
                   <?php endforeach;
                   }
 
