@@ -603,7 +603,8 @@ hr{
     align-items: flex-start;
 }
 
-.sidenav a{
+.sidenav a,
+.sidenav details{
     /* transition: 0.3s; */
     display: block;
     padding: 8px 8px 8px 32px;
@@ -1376,7 +1377,8 @@ ul.skills li.more span:hover {
   font-weight: 900;
 }
 
-.service-card button{
+.service-card button,
+.backdrop dialog button{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none' /%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' fill='%23ffffff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 140px 8px;
@@ -1388,7 +1390,8 @@ ul.skills li.more span:hover {
   padding: 1px 7px 1px 7px;
 }
   
-.service-card:hover button{
+.service-card:hover button,
+.backdrop dialog:hover button{
   transition: background-position 0.5s ease, padding-left 0.5s ease;
   background-position: 113px 8px;
   padding-left: 0;
@@ -1396,7 +1399,8 @@ ul.skills li.more span:hover {
   color: white;
 } 
 
-.service-card:hover button{
+.service-card:hover button,
+.backdrop dialog :hover button{
   padding-left: 7px!important;
 }
 /* Animated Numbers Stats */
@@ -1689,6 +1693,13 @@ dialog{
   background-image: linear-gradient(to right, #f75050 0%, #f43333  51%, #9d1717 100%);
   color: white;
   box-shadow: 3px 2px 5px #000000;
+}
+
+.web-bg-cover{    
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.4) blur(10px);
+  height: 100vh;
 }
 
 .backdrop{
