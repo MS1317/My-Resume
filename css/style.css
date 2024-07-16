@@ -58,6 +58,16 @@ hr{
     padding: 20px 20px;
 }
 
+#page-changer {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Adjust the duration as needed */
+}
+
+#page-changer.fade-out {
+  opacity: 0;
+}
+
+
 /*-------------------------------------------------- Preloader --------------------------------------------------*/
 
 :root {
@@ -1684,6 +1694,7 @@ color: white;
 }
 
 dialog{
+  width: 80%;
   border: none;
   position: absolute;
   top: 50%;
@@ -1716,6 +1727,38 @@ dialog{
   margin-top: 20px;
   margin-bottom: 5px;
 }
+
+/* Define keyframes for fade-in and fade-out */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Apply the animations to the backdrop and dialog */
+.backdrop, .web-modal {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust the timing as needed */
+}
+
+.backdrop.fade-in, .web-modal.fade-in {
+  animation: fadeIn 0.5s forwards; /* Adjust the timing as needed */
+}
+
+.backdrop.fade-out, .web-modal.fade-out {
+  animation: fadeOut 0.5s forwards; /* Adjust the timing as needed */
+}
+
+/* Transition for background image scrolling */
+.web-bg-cover {
+  background-position: top;
+  transition: background-position 5s ease-in-out; /* Adjust the timing as needed */
+}
+
 /* ----------------------------------------------About---------------------------------------------- */
 .about-page.page-content{
   padding-left: 20px!important;

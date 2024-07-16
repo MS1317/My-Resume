@@ -34,10 +34,11 @@ if (!in_array($page, $valid_pages)) {
             <!-- <a href="#">Services</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a> -->
-            <details>
+            <!-- <details>
                <summary>Services</summary>
                <a href="?page=services/web" onclick="loadContent('services/web',event)">Web</a>
-            </details>
+               <a href="?page=services/video-editing" onclick="loadContent('services/video-editing',event)">Video Editing</a>
+            </details> -->
          </div>
       </div>
    </div> 
