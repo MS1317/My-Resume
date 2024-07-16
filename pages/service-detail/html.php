@@ -5,7 +5,7 @@ if (!defined('BASE_PATH')) {
 }
 require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
 ?>
-<section class="page-content">
+<section class="web page-content">
     <div class="web-list">
         <?php $index="1";?>
         <?php if (!empty($htmlWebsites)) {

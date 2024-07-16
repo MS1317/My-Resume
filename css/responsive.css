@@ -90,7 +90,7 @@
     }
 
     .web-choose{
-        margin: 50px 0px 0px;
+        margin: 20% 0px 10%;
     }
 }
 
@@ -264,7 +264,11 @@
 }
 
 .page-content{
-    margin: 41px 0px;
+    margin: 0% 0% 30%;
+}
+
+.web.page-content{
+    margin: 10% 0% 10%;
 }
 
 .item-wrapper{
