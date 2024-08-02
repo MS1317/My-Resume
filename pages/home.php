@@ -67,3 +67,6 @@ if (!defined('BASE_PATH')) {
                   </div>
             </section>
          </div>
+         <?php
+         include("timline.php");
+         ?>

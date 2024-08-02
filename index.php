@@ -53,22 +53,25 @@ require("footer.php");
 ?>
 
 <script>
-// Function to trigger the exit animation and remove the preloader
 function hidePreloader() {
     const sliceLeft = document.querySelector('.slice-left');
     const sliceRight = document.querySelector('.slice-right');
-    sliceLeft.classList.add('slice-exit-left');
-    sliceRight.classList.add('slice-exit-right');
 
-    // Remove the preloader container after the animation completes
-    sliceLeft.addEventListener('animationend', () => {
-        document.querySelector('.slice-container').remove();
-    });
+    if (sliceLeft && sliceRight) {
+        sliceLeft.classList.add('slice-exit-left');
+        sliceRight.classList.add('slice-exit-right');
+
+        // Remove the preloader container after the animation completes
+        sliceLeft.addEventListener('animationend', () => {
+            document.querySelector('.slice-container').remove();
+        });
+    } else {
+        console.warn('Preloader elements not found');
+    }
 }
 
-// Simulate the preloader being hidden after content is loaded
 window.addEventListener('load', () => {
-        setTimeout(hidePreloader, 1200); // Adjust the timeout as needed
+    setTimeout(hidePreloader, 1200); // Adjust the timeout as needed
 });
 
 </script>
