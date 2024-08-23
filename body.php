@@ -143,7 +143,7 @@ if (!in_array($page, $valid_pages)) {
    </div>
   
    <!-- Main  Content -->
-   <div class="content" style="overflow-y:scroll!important; order:2;">
+   <div id="main-content" class="content" style="overflow-y:scroll!important; order:2;">
       <div id="backdrop-filtr" class="backdrop-filter">
          <div id="content" class="mainContent" style="left:0px;">
             <div id="page-changer" class="c-backdrop">
