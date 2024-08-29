@@ -121,6 +121,7 @@
   transition: 0.3s ease 0s;
   background-attachment: fixed;
   background-size: cover;
+  background-position:center;
 }
 .timeline-container:before {
   position: absolute;
