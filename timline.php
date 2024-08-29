@@ -182,19 +182,6 @@
                     superior achievement.</p>
             </div>
         </div>
-        <div class="timeline-item 3" data-text="FATHER OF THE TURKS">
-            <div class="timeline__content"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg" />
-                <h2 class="timeline__content-title">1905</h2>
-                <p class="timeline__content-desc">In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.</p>
-            </div>
-        </div>
-        <div class="timeline-item 4" data-text="FATHER OF THE TURKS">
-            <div class="timeline__content"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg" />
-                <h2 class="timeline__content-title">1908</h2>
-                <p class="timeline__content-desc">In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer in
-                    Salonica andIstanbul and as a military attache in Sofia.</p>
-            </div>
-        </div>
     </div>
 </div>
 
