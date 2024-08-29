@@ -213,7 +213,7 @@
     var options = {
       root: document.getElementById("main-content"),
       rootMargin: "0px",
-      threshold: 0.3 // Adjust this threshold to determine when an item is considered "visible"
+      threshold: 0.5 // Adjust this threshold to determine when an item is considered "visible"
     };
 
     var observer = new IntersectionObserver(function(entries) {
