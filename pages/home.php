@@ -67,6 +67,25 @@ if (!defined('BASE_PATH')) {
                   </div>
             </section>
          </div>
-         <?php
-         include("timline.php");
-         ?>
+         <div class="timeline-container" id="timeline-1">
+            <div class="timeline-header">
+               <h2 class="timeline-header__title">My journey so far</h2>
+               <h3 class="timeline-header__subtitle">Career & Education</h3>
+            </div>
+            <div class="timeline">
+               <div class="timeline-item 1" data-text="FATHER OF THE TURKS">
+                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/1728259361770.jpg" />
+                        <h2 class="timeline__content-title">188</h2>
+                        <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
+                           woman, raised him and his sister.</p>
+                     </div>
+               </div>
+               <div class="timeline-item 2" data-text="FATHER OF THE TURKS">
+                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/Snapchat-1136696124.jpg" />
+                        <h2 class="timeline__content-title">1893</h2>
+                        <p class="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's
+                           superior achievement.</p>
+                     </div>
+               </div>
+            </div>
+         </div>

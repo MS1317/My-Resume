@@ -10,6 +10,7 @@
 <script src="js\typeEffect.js"></script>
 <script src="js\content-loader.js"></script>
 <script src="js\webModal.js"></script>
+<script src="js\custom.js"></script>
 
 <!-- <script src="js\youtube.js"></script> -->
 </body>
