@@ -74,7 +74,7 @@ if (!defined('BASE_PATH')) {
             </div>
             <div class="timeline">
                <div class="timeline-item 1" data-text="FATHER OF THE TURKS">
-                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/1728259361770.jpg" />
+                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/172825936177.jpg" />
                         <h2 class="timeline__content-title">188</h2>
                         <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
                            woman, raised him and his sister.</p>
