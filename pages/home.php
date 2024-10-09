@@ -73,18 +73,16 @@ if (!defined('BASE_PATH')) {
                <h3 class="timeline-header__subtitle">Career & Education</h3>
             </div>
             <div class="timeline">
-               <div class="timeline-item 1" data-text="FATHER OF THE TURKS">
-                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/172825936177.jpg" />
-                        <h2 class="timeline__content-title">188</h2>
-                        <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
-                           woman, raised him and his sister.</p>
+               <div class="timeline-item 1" data-text="Frontend Developer at Evolvan">
+                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/Snapchat-1136696124.jpg" />
+                        <h2 class="timeline__content-title">May 2023 - Present</h2>
+                        <p class="timeline__content-desc"> Contributing to the development of dynamic, responsive web applications. My role involves working closely with backend developers, designers, and other team members to create seamless user experiences. I specialize in implementing intuitive UI/UX designs using modern frameworks such as React.js, ensuring code efficiency, and maintaining best practices in web development.</p>
                      </div>
                </div>
-               <div class="timeline-item 2" data-text="FATHER OF THE TURKS">
-                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/Snapchat-1136696124.jpg" />
-                        <h2 class="timeline__content-title">1893</h2>
-                        <p class="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's
-                           superior achievement.</p>
+               <div class="timeline-item 2" data-text="Bachelors in Computer & Application">
+                     <div class="timeline__content"><img class="timeline__img" src="assets/timeline/172825936177.jpg" />
+                        <h2 class="timeline__content-title">2019-21</h2>
+                        <p class="timeline__content-desc">I completed my Bachelor of Computer Applications (BCA) from PCTE, where I gained foundational knowledge in software development, web technologies, and programming languages. My education has played a key role in shaping my problem-solving skills and technical expertise.</p>
                      </div>
                </div>
             </div>

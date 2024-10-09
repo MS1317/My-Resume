@@ -87,6 +87,12 @@
 }
 }
 
+@media (min-width:767px){
+    .timeline{
+        padding: 0px 5px;
+    }
+}
+
 @media (max-width:769px){
     .main-body{
         margin: unset;

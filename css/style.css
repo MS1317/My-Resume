@@ -585,7 +585,7 @@ hr{
 
 .side-navbar{
     max-height: inherit;
-    background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
+    background: linear-gradient(159deg,rgba(37,37,50) 0%,rgba(35,35,45) 100%);
 }
 
 .nav-shadow{
@@ -1777,7 +1777,7 @@ dialog{
 }
 .timeline__content-title {
   font-weight: normal;
-  font-size: 66px;
+  font-size: 26px;
   margin: -10px 0 0 0;
   transition: 0.4s;
   padding: 0 10px;
@@ -1857,7 +1857,9 @@ dialog{
   opacity: 1;
 }
 .timeline-item--active .timeline__content-title {
-  margin: -50px 0 20px 0;
+  margin: -12px 0 20px 0;
+  z-index: 99999999;
+  position: relative;
 }
 @media only screen and (max-width: 767px) {
   .timeline-item {
@@ -1877,18 +1879,22 @@ dialog{
     padding-bottom: 40px;
   }
 }
-.timeline__img {
+.timeline__img {    
   width: 100%;
   max-width: 100%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  filter: brightness(0.9);
 }
 .timeline-container {
   width: 100%;
   position: relative;
-  padding: 80px 0;
+  padding: 30px 0;
   transition: 0.3s ease 0s;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: 50px;
 }
 .timeline-container:before {
   position: absolute;
@@ -1902,7 +1908,7 @@ dialog{
 .timeline-header {
   width: 100%;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   position: relative;
 }
 .timeline-header__title {
