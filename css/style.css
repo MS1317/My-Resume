@@ -972,7 +972,7 @@ td.details-head {
 }
 
 .sidebar-scrollable-menu{
-    padding: 15px 15px 90px;
+    padding: 15px 15px 15px;
     overflow: auto;
     height: 100%;
     max-height: calc(100vh - 260px);
