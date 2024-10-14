@@ -75,7 +75,7 @@ if (!defined('BASE_PATH')) {
             <div class="timeline">
                <div class="timeline-item 1" data-text="Frontend Developer at Evolvan">
                      <div class="timeline__content"><img class="timeline__img" src="assets/timeline/Snapchat-1136696124.jpg" />
-                        <h2 class="timeline__content-title">May 2023 - Present</h2>
+                        <h2 class="timeline__content-title">2023 - Present</h2>
                         <p class="timeline__content-desc"> Contributing to the development of dynamic, responsive web applications. My role involves working closely with backend developers, designers, and other team members to create seamless user experiences. I specialize in implementing intuitive UI/UX designs using modern frameworks such as React.js, ensuring code efficiency, and maintaining best practices in web development.</p>
                      </div>
                </div>

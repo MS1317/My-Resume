@@ -70,15 +70,15 @@ function closeDialog(index) {
     }
 }
 
-function bgImgScroller(dialogBg, duration) {
-    if (dialogBg) {
-        dialogBg.style.transition = `background-position ${duration}ms ease-in-out`;
-        dialogBg.style.backgroundPosition = 'top';
-        setTimeout(() => {
-            // Scroll from top to bottom after 2 seconds
-            dialogBg.style.backgroundPosition = 'bottom';
-        }, 2000); // Adjust timing as needed
-    } else {
-        console.log('Background image element not found');
-    }
-}
+// function bgImgScroller(dialogBg, duration) {
+//     if (dialogBg) {
+//         dialogBg.style.transition = `background-position ${duration}ms ease-in-out`;
+//         dialogBg.style.backgroundPosition = 'top';
+//         setTimeout(() => {
+//             // Scroll from top to bottom after 2 seconds
+//             dialogBg.style.backgroundPosition = 'bottom';
+//         }, 2000); // Adjust timing as needed
+//     } else {
+//         console.log('Background image element not found');
+//     }
+// }

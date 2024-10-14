@@ -112,7 +112,9 @@
 }
 
 @media (max-width:700px){
-    
+    .web-modal{
+        flex-wrap: wrap-reverse;
+    }
 }
 
 @media (min-width:601px) and (max-width:830px){
@@ -173,6 +175,7 @@
     }
 
     .content{
+        padding-top: 50px;
         overflow: hidden;
         overflow-y: scroll!important;
         order: 2;
@@ -181,6 +184,7 @@
 
     .intro-overlay{
         margin-top: 39px;
+        padding: 0px!important;
     }
 
     #video-editing.page-content {
@@ -261,7 +265,7 @@
     }
 
     .intro-overlay{
-        padding: 45px 0px 0px!important;
+        /* padding: 45px 0px 0px!important; */
     }
 
     .side-navbar.mw-100{
@@ -289,9 +293,9 @@
     margin: 0% 0% 30%;
 } */
 
-.web.page-content {
+/* .web.page-content {
     padding: 9% 0% 9%;
-}
+} */
 
 .item-wrapper{
     gap: 25px;

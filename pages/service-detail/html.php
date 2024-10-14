@@ -20,15 +20,12 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
                     <div class="web-desc"><?php echo $htmlWebsite['desc']; ?>
                     </div>
                     <span class="view-more arrow-right">
-                        &#129066;
+                    <i class="fa-solid fa-arrow-right-long"></i>
                     </span>
                 </div>
 
                 <div class="backdrop" id="backdrop-<?php echo $index;?>" style="display:none;">
-                    <div class="web-bg-cover" style="background-image:url('assets/web/websites/<?php echo $htmlWebsite['web_img']; ?>');">
-                    </div>
-
-                    <dialog id="web-modal-<?php echo $index;?>" class="web-modal">
+                    <dialog id="web-modal-<?php echo $index;?>" class="web-modal d-flex flex-row gap-3 align-items-center">
                         <div id="dialog-background-image">
                             <a class="web-link" href="https://www.<?php echo $htmlWebsite['name']; ?>/">
                                 <h3 class="list-item-title"><?php echo $htmlWebsite["name"]; ?></h3>
@@ -41,6 +38,9 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
                             <button class="close-dialog" onClick="closeDialog(<?php echo $index;?>)">
                                 Close
                             </button>
+                        </div>
+
+                        <div class="web-bg-cover" style="background-image:url('assets/web/websites/<?php echo $htmlWebsite['web_img']; ?>');">
                         </div>
                     </dialog>
                 </div>
