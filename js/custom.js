@@ -3,7 +3,7 @@
     // console.log("function initialised");
     
     $.fn.timeline = function() {
-    //   console.log("timeline entered");
+    // console.log("timeline entered");
       
       var selectors = {
         id: $(this),
@@ -12,11 +12,11 @@
         img: ".timeline__img"
       };
   
-    //   console.log(selectors,"selectors");
+    // console.log(selectors,"selectors");
   
       // Initialize the first item as active
       var first= selectors.item.eq(0);
-    //   console.log(first,"first item");
+    // console.log(first,"first item");
       selectors.item.eq(0).addClass(selectors.activeClass);
       selectors.id.css(
         "background-image",
@@ -30,7 +30,7 @@
       };
   
       var observer = new IntersectionObserver(function(entries) {
-        // console.log(entries,"entries");
+    // console.log(entries,"entries");
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
             var target = $(entry.target);
@@ -56,7 +56,7 @@
 // Dynamic Viewport Height
 function setDynamicHeight() {
     const viewportHeight = window.innerHeight;
-    console.log(viewportHeight);
+    // console.log(viewportHeight);
 
     document.querySelector('#main').style.height= viewportHeight + 'px';
 }

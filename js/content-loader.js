@@ -1,53 +1,53 @@
 window.onload = function() {
     // Get the initial page from the URL query parameter
     var queryParams = new URLSearchParams(window.location.search);
-    console.log(queryParams,"Query Params")
+    // console.log(queryParams,"Query Params")
 
     var initialPage = queryParams.get('page');
-    console.log(initialPage,"Initial Page")
+    // console.log(initialPage,"Initial Page")
 
     // If initialPage is not null, set it as the active page name
     if (initialPage) {
-        console.log("Initial Page is available");
+        // console.log("Initial Page is available");
 
           // Display active page name in active-page class
           var pageParts=initialPage.split('/');
-          console.log("Page Parts",pageParts);
+          // console.log("Page Parts",pageParts);
           var activePageName = pageParts[pageParts.length - 1];
           activePageName = activePageName.charAt(0).toUpperCase() + activePageName.slice(1); // Capitalize the first letter
-          console.log("Active Page Name",activePageName);
+          // console.log("Active Page Name",activePageName);
           document.querySelector('.active-page p').textContent = activePageName;
         
         document.querySelector('.active-page p').textContent = activePageName;
-        console.log("Setting the available initial page")
+        // console.log("Setting the available initial page")
     }
 
     // If initialPage is null or undefined, set it to 'home' (default page)
     if (!initialPage) {
-        console.log("No Initial Page provided");
+        // console.log("No Initial Page provided");
         initialPage = 'home';
 
         // Set the active page name
-        console.log("Setting default page as active page");
+        // console.log("Setting default page as active page");
         
         
         // Display active page name in active-page class
         var pageParts=initialPage.split('/');
-        console.log("Page Parts",pageParts);
+        // console.log("Page Parts",pageParts);
         var activePageName = pageParts[pageParts.length - 1];
         activePageName = activePageName.charAt(0).toUpperCase() + activePageName.slice(1); // Capitalize the first letter
-        console.log("Active Page Name",activePageName);
+        // console.log("Active Page Name",activePageName);
         document.querySelector('.active-page p').textContent = activePageName;
 
         document.querySelector('.active-page p').textContent = activePageName;
 
         // Set the active class for the initial page link
         var initialPageLink = document.getElementById(initialPage);
-        console.log("Initial Page Link: ", initialPageLink);
+        // console.log("Initial Page Link: ", initialPageLink);
         if (initialPageLink) {
-            console.log(
-                "Adding Active Class to Initial Page Link"
-            );
+            // console.log(
+            //     "Adding Active Class to Initial Page Link"
+            // );
             initialPageLink.classList.add('active');
         }
     }
@@ -55,31 +55,31 @@ window.onload = function() {
 
 // Listen for popstate event
 window.addEventListener('popstate', function(event) {
-    console.log("Popstate Event:", event);
+    // console.log("Popstate Event:", event);
     var state = event.state;
     if (state && state.page) {
-        console.log("Setting the active page name");
+        // console.log("Setting the active page name");
         loadContent(state.page,event); // Load content based on the state data
     }
     else {
-        console.log("No page parameter available, loading home page");
+        // console.log("No page parameter available, loading home page");
         loadContent('home', event); // Load home page if no page parameter is available
     }
 });
 
 function loadContent(page, event) {
     // Check if the event object exists and if the link is being opened in a new tab
-    console.log("loadContent entered");
+    // console.log("loadContent entered");
     if(page || event){   
-        console.log("Event and page Object exists");
+        // console.log("Event and page Object exists");
         event.preventDefault();
 
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-            console.log("HTTP request function called, readyState:", this.readyState, "status:", this.status);
+            // console.log("HTTP request function called, readyState:", this.readyState, "status:", this.status);
 
             if (this.readyState == 4 && this.status == 200) {
-                console.log("Successful response received");
+                // console.log("Successful response received");
 
                 // Fade out the current content before replacing it
                 var pageChanger = document.getElementById("page-changer");
@@ -106,10 +106,10 @@ function loadContent(page, event) {
 
                     // Display active page name in active-page class
                     var pageParts = page.split('/');
-                    console.log("Page Parts", pageParts);
+                    // console.log("Page Parts", pageParts);
                     var activePageName = pageParts[pageParts.length - 1];
                     activePageName = activePageName.charAt(0).toUpperCase() + activePageName.slice(1); // Capitalize the first letter
-                    console.log("Active Page Name", activePageName);
+                    // console.log("Active Page Name", activePageName);
                     document.querySelector('.active-page p').textContent = activePageName;
 
                     // After loading the content, trigger the type animation again
@@ -118,7 +118,7 @@ function loadContent(page, event) {
                     // Fade in the new content
                     pageChanger.classList.remove('fade-out');
 
-                    console.log("Page content loaded successfully for: " + page);
+                    // console.log("Page content loaded successfully for: " + page);
                 }, 500); // Adjust the duration to match your CSS transition duration (0.5s in this example)
             } else if (this.readyState == 4) {
                 // Debugging step: Log errors if the content loading fails

@@ -1,4 +1,4 @@
-console.log("Modal function loaded");
+// console.log("Modal function loaded");
 // Attach click event to each item-wrapper
 function openDialog(index) {
     const dialogId = `web-modal-${index}`;
@@ -26,10 +26,14 @@ function openDialog(index) {
         backdrop.classList.add('fade-in');
         dialog.classList.add('fade-in');
     } else {
-        console.log("Dialog or backdrop not found");
+        // console.log("Dialog or backdrop not found");
     }
 
-    bgImgScroller(dialogBg, 5000);
+    if (dialogBg) {
+        dialogBg.addEventListener('mouseenter',()=> bgImgScroller(dialogBg, 3000));
+        dialogBg.addEventListener('mouseleave' ,()=> resetBgScroller(dialogBg));
+    }
+
 }
 
 // Define the closeDialog function globally
@@ -66,19 +70,24 @@ function closeDialog(index) {
             dialog.classList.remove('fade-out');
         }, 500); // Adjust the timing to match the CSS transition duration
     } else {
-        console.log("Dialog or backdrop not found");
+        // console.log("Dialog or backdrop not found");
     }
 }
 
-// function bgImgScroller(dialogBg, duration) {
-//     if (dialogBg) {
-//         dialogBg.style.transition = `background-position ${duration}ms ease-in-out`;
-//         dialogBg.style.backgroundPosition = 'top';
-//         setTimeout(() => {
-//             // Scroll from top to bottom after 2 seconds
-//             dialogBg.style.backgroundPosition = 'bottom';
-//         }, 2000); // Adjust timing as needed
-//     } else {
-//         console.log('Background image element not found');
-//     }
-// }
+function bgImgScroller(dialogBg, duration) {
+    if (dialogBg) {
+        dialogBg.style.transition = `background-position ${duration}ms ease-in-out`;
+        dialogBg.style.backgroundPosition = 'top';
+        setTimeout(() => {
+            // Scroll from top to bottom after 2 seconds
+            dialogBg.style.backgroundPosition = 'bottom';
+        }, 500); // Adjust timing as needed
+    } else {
+        // console.log('Background image element not found');
+    }
+}
+
+function resetBgScroller(dialogBg) {
+    dialogBg.style.transition = 'background-position 2500ms';
+    dialogBg.style.backgroundPosition = 'top';
+}

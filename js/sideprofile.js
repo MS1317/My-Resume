@@ -20,7 +20,7 @@ function closeSideProfile(){
 function checkWidthAndClose() {
     if (window.innerWidth >= 969) {
         closeSideProfile();
-        console.log("Window width is greater than 969, close function called");
+        // console.log("Window width is greater than 969, close function called");
     }
 }
 
