@@ -1,3 +1,9 @@
+@media (min-width:320px) and (max-width:375px){
+    #page-changer .web.page-content{
+     padding-top: 13%;   
+    }
+}
+
 @media (max-width:355px){
     .web-choose{
         height: unset!important;
@@ -7,7 +13,16 @@
 
 }
 
-@media(max-width:426px){
+@media (min-width:375px) and (max-width:425px){
+    #page-changer .web.page-content{
+        padding-top: 12%;
+    }
+}
+
+@media (max-width:426px) and (max-width:768px){
+    #page-changer .web.page-content{
+        padding-top: 11%;
+    }
     .item-wrapper{
         display: grid;
         grid-template-areas: "listItem moreBtn""webDesc webDesc";
@@ -30,7 +45,7 @@
     }
 
     .page-content{
-        padding: 0% 20px 30%;
+        padding: 0% 20px 20%;
     }
 
     .web-choose{
@@ -93,6 +108,12 @@
     }
 }
 
+@media (min-width:768px) and (max-width:842px){
+    #page-changer .web.page-content{
+        padding-top: 6%;
+    }
+}
+
 @media (max-width:769px){
     .main-body{
         margin: unset;
@@ -128,6 +149,14 @@
 }
 
 @media (max-width:843px){
+    #page-changer{
+        padding-top: 8%;
+    }
+
+    #page-changer:has(.web.page-content){
+        padding-top: unset!important;
+    }
+
     .side-profile{
         justify-content: flex-start;
     }
@@ -175,7 +204,6 @@
     }
 
     .content{
-        padding-top: 50px;
         overflow: hidden;
         overflow-y: scroll!important;
         order: 2;
