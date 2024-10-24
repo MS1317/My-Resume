@@ -66,7 +66,7 @@ function hidePreloader() {
             document.querySelector('.slice-container').remove();
         });
     } else {
-        console.warn('Preloader elements not found');
+        // console.warn('Preloader elements not found');
     }
 }
 

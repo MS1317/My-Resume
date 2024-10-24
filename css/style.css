@@ -54,7 +54,7 @@ hr{
 }
 
 .page-content{
-    text-align: justify;
+    /* text-align: justify; */
     padding: 0px 20px 20px;
 }
 
@@ -1696,9 +1696,7 @@ color: white;
 dialog{    
   max-width: 1400px;
   width: 80%;
-  max-height: 70%;
-  overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   border: none;
   position: absolute;
   top: 50%;
@@ -1712,15 +1710,30 @@ dialog{
   scrollbar-width: none;
 }
 
+.scrollable-content{
+  max-height: 70%;
+}
+
 .web-bg-cover{     
+  max-width: 370px;
   min-width: 226px;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 60vh;
+  height: 45vh;
   border-radius: 5px;
+  animation: pulse 1.2s infinite;
 }
 
+.web-bg-cover:hover{
+  animation: none;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.9); } /* Neon cyan color */
+    100% { box-shadow: 0 0 25px 20px rgba(0, 255, 255, 0); }
+    /* 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); } */
+}
 .backdrop{
   transition: all 1s;
   background-color: #000000a6;
@@ -1782,15 +1795,14 @@ dialog{
 /* ----------------------------------------------Timeline---------------------------------------------- */
 .timeline {
   display: flex;
-  margin: 0 auto;
+  margin: 0 5%;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: 700px;
   position: relative;
 }
 .timeline__content-title {
   font-weight: normal;
-  font-size: 26px;
+  font-size: 24px;
   margin: -10px 0 0 0;
   transition: 0.4s;
   padding: 0 10px;
@@ -1834,7 +1846,6 @@ dialog{
 }
 .timeline-item:before {
   content: attr(data-text);
-  letter-spacing: 3px;
   width: 100%;
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
@@ -1873,19 +1884,20 @@ dialog{
   margin: -12px 0 20px 0;
   z-index: 99999999;
   position: relative;
+  text-shadow: 2px 2px 2px black;
 }
 @media only screen and (max-width: 767px) {
   .timeline-item {
     align-self: baseline !important;
     width: 100%;
-    padding: 0 30px 150px 80px;
+    padding: 0 10px 150px 90px;
   }
   .timeline-item:before {
     left: 10px !important;
     padding: 0 !important;
     top: 50px;
     text-align: center !important;
-    width: 60px;
+    width: 72px;
     border: none !important;
   }
   .timeline-item:last-child {

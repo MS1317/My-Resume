@@ -114,6 +114,8 @@ function loadContent(page, event) {
 
                     // After loading the content, trigger the type animation again
                     initializeTypeEffect();
+                    scrollToTop();
+                    $("#timeline-1").timeline();
 
                     // Fade in the new content
                     pageChanger.classList.remove('fade-out');
@@ -131,4 +133,17 @@ function loadContent(page, event) {
         xhttp.open("GET", "pages/" + page + ".php?timestamp=" + new Date().getTime(), true);
         xhttp.send();
     }
+}
+
+function scrollToTop() {
+    var scrollPage = document.getElementById("main-content");
+    // Log the current scroll position before scrolling
+    // console.log("Current scroll position (before):", scrollPage.scrollTop);
+
+    scrollPage.scrollTo({ top: 0 });
+
+    // Use a small delay to log the new scroll position after scrolling
+    setTimeout(function() {
+        // console.log("Current scroll position (after):", scrollPage.scrollTop);
+    }, 500);  // 500ms delay to ensure smooth scroll is completed
 }

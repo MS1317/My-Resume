@@ -25,7 +25,9 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
                 </div>
 
                 <div class="backdrop" id="backdrop-<?php echo $index;?>" style="display:none;">
-                    <dialog id="web-modal-<?php echo $index;?>" class="web-modal d-flex flex-row gap-3 align-items-center">
+                    <dialog id="web-modal-<?php echo $index;?>" class="web-modal"S>
+                        <div class="scrollable-content  d-flex flex-row gap-3 align-items-center">
+
                         <div id="dialog-background-image">
                             <a class="web-link" href="https://www.<?php echo $htmlWebsite['name']; ?>/">
                                 <h3 class="list-item-title"><?php echo $htmlWebsite["name"]; ?></h3>
@@ -40,7 +42,7 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
                             </button>
                         </div>
 
-                        <div class="web-bg-cover" style="background-image:url('assets/web/websites/<?php echo $htmlWebsite['web_img']; ?>');">
+                        <div class="web-bg-cover pulse" style="background-image:url('assets/web/websites/<?php echo $htmlWebsite['web_img']; ?>');">
                         </div>
                     </dialog>
                 </div>

@@ -7,7 +7,8 @@
 @media (max-width:355px){
     .web-choose{
         height: unset!important;
-        margin: 20% 0% 16%!important;
+        margin: 20% 0% 0%!important;
+        padding-bottom: 16%;
     }
 
 
@@ -102,15 +103,30 @@
 }
 }
 
-@media (min-width:767px){
-    .timeline{
-        padding: 0px 5px;
+@media (max-width:736px){
+    .scrollable-content{
+        flex-wrap: wrap;
+        max-height: 220px;
+    }
+
+    .web-bg-cover{
+        max-width: 200px;
     }
 }
 
-@media (min-width:768px) and (max-width:842px){
+@media (min-width:767px){
+    .timeline{
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width:425px) and (max-width:768px){
     #page-changer .web.page-content{
         padding-top: 6%;
+    }
+
+    .web-bg-cover{
+        height: 54vh;
     }
 }
 
@@ -340,5 +356,11 @@
 @media (max-width:1053px){
     .video-wrapper{
         flex-wrap: wrap;
+    }
+}
+
+@media (min-width:2560px){
+    .web-bg-cover{
+        height: 28vh;
     }
 }
