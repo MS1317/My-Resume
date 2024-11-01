@@ -104,13 +104,16 @@
 }
 
 @media (max-width:736px){
-    .scrollable-content{
+    .scrollable-content{    
+        scrollbar-width: none;
         flex-wrap: wrap;
-        max-height: 220px;
+        max-height: 420px;
+        overflow-y: scroll;
     }
 
     .web-bg-cover{
         max-width: 200px;
+        margin: 0 auto 15px;
     }
 }
 
@@ -127,6 +130,7 @@
 
     .web-bg-cover{
         height: 54vh;
+        margin: 0 auto 10px;
     }
 }
 

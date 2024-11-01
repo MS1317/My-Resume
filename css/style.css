@@ -1736,7 +1736,7 @@ dialog{
 }
 .backdrop{
   transition: all 1s;
-  background-color: #000000a6;
+  background-color: #000000cf;
   height: 100vh;
   left: 0;
   position: fixed;

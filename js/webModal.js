@@ -56,10 +56,11 @@ function closeDialog(index) {
         // Wait for the fade-out animation to complete before hiding the elements
         setTimeout(() => {
             dialog.removeAttribute('open');
-            backdrop.style.display = 'none';
             navbar.style.zIndex = "";
             sidebar.style.zIndex = "";
             sidebarBtn.style.zIndex = "";
+            backdrop.style.display = 'none';
+            
             // Loop through all view more arrows and reset z-index
             viewMoreArrows.forEach(arrow => {
                 arrow.style.zIndex = '';
