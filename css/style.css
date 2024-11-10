@@ -927,7 +927,7 @@ details[open] ::marker {
 }
 
 #main {
-  height: 97dvh;
+  /* height: 96dvh; */
   overflow-y: hidden;
   max-width: 1400px;
   position: relative;
