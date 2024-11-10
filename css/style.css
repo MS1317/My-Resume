@@ -637,6 +637,14 @@ img {
 details[open] ::marker {
   transition: all 1s;
 } */
+.side-navbar {
+  max-height: inherit;
+  background: linear-gradient(
+    159deg,
+    rgba(37, 37, 50) 0%,
+    rgba(35, 35, 45) 100%
+  );
+}
 
 .serv-item {
   display: none;
@@ -919,7 +927,7 @@ details[open] ::marker {
 }
 
 #main {
-  height: 100dvh;
+  height: 97dvh;
   overflow-y: hidden;
   max-width: 1400px;
   position: relative;

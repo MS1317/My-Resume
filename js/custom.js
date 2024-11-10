@@ -68,7 +68,7 @@ function setDynamicHeight() {
 }
 
 // setDynamicHeight();
-window.addEventListener("resize", setDynamicHeight);
+// window.addEventListener("resize", setDynamicHeight);
 
 function setCopyrightYear() {
   const year = new Date().getFullYear();
