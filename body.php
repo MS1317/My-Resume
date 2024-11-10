@@ -36,9 +36,17 @@ if (!in_array($page, $valid_pages)) {
             <a href="#">Contact</a> -->
             <!-- <details>
                <summary>Services</summary>
-               <a href="?page=services/web" onclick="loadContent('services/web',event)">Web</a>
-               <a href="?page=services/video-editing" onclick="loadContent('services/video-editing',event)">Video Editing</a>
+               
             </details> -->
+            <div class="service wrapper">
+               <a class="service-drop" href="javascript:void(0)">Services</a>
+               <i class="fa-solid fa-caret-right"></i>
+            </div>
+
+            <a class="serv-item" href="?page=services/web" onclick="loadContent('services/web',event)">Web</a>
+
+            <a class="serv-item" href="?page=services/video-editing"
+               onclick="loadContent('services/video-editing',event)">Video-Editing</a>
          </div>
       </div>
    </div> 
@@ -62,7 +70,9 @@ if (!in_array($page, $valid_pages)) {
                      <li>Wordpress,</li>
                      <li>
                         <a class="channel-link" href="http://www.youtube.com/@TechiTuber">
-                        <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO
+                           <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span
+                                 style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong>
+                           CEO
                         </a>
                      </li>
                   </ul>
@@ -71,68 +81,68 @@ if (!in_array($page, $valid_pages)) {
          </div>
 
          <div class="sidebar-scrollable-menu">
-               <div id="sideDetails2" class="side-details-2 pt-3 px-3">
-                  <table>
-                     <tr>
-                        <td class="details-head">
-                           Residence:
-                        </td>
-                        <td class="details-data">
-                           India
-                        </td>
-                     </tr>
-                     <tr>
-                        <td   class="details-head">
-                           City:
-                        </td>
-                        <td class="details-data">
-                           Ludhiana
-                        </td>
-                     </tr>
-                     <tr>
-                        <td   class="details-head">
-                           Age:
-                        </td>
-                        <td class="details-data">
-                           23
-                        </td>
-                     </tr>
-                  </table>
+            <div id="sideDetails2" class="side-details-2 pt-3 px-3">
+               <table>
+                  <tr>
+                     <td class="details-head">
+                        Residence:
+                     </td>
+                     <td class="details-data">
+                        India
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="details-head">
+                        City:
+                     </td>
+                     <td class="details-data">
+                        Ludhiana
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="details-head">
+                        Age:
+                     </td>
+                     <td class="details-data">
+                        23
+                     </td>
+                  </tr>
+               </table>
+            </div>
+
+            <hr>
+
+            <div class="progrss-div d-flex justify-content-evenly">
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="100" max="100" text-format='percent'></circle-progress>
+                  <h6 class="text-center">Punjabi</h6>
                </div>
 
-                  <hr>
-
-               <div class="progrss-div d-flex justify-content-evenly">  
-                  <div class="lang-prog">
-                     <circle-progress class="circle" value="100" max="100" 	text-format='percent'></circle-progress>
-                     <h6 class="text-center">Punjabi</h6>
-                  </div>
-
-                  <div class="lang-prog">
-                     <circle-progress class="circle" value="60" max="100" 	text-format='percent'></circle-progress>
-                     <h6 class="text-center">Hindi</h6>
-                  </div>
-               
-                  <div class="lang-prog">
-                     <circle-progress class="circle" value="80" max="100" 	text-format='percent'></circle-progress>
-                     <h6 class="text-center">English</h6>
-                  </div>
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="60" max="100" text-format='percent'></circle-progress>
+                  <h6 class="text-center">Hindi</h6>
                </div>
 
-                  <hr>
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="80" max="100" text-format='percent'></circle-progress>
+                  <h6 class="text-center">English</h6>
+               </div>
+            </div>
 
-               <div class="content">
-                  <div class="profile-skills">
-                     <div>
-                           <ul class="skills skills3 p-0 m-0">
-                              <li class="sk-css"><span>CSS</span></li>
-                              <li class="sk-htm"><span>HTML</span></li>
-                              <li class="sk-jav"><span>REACT JS & JS</span></li>
-                              <li class="sk-sql"><span>WORDPRESS</span></li>
-                           </ul>
-                     </div>
+            <hr>
+
+            <div class="content">
+               <div class="profile-skills">
+                  <div>
+                     <ul class="skills skills3 p-0 m-0">
+                        <li class="sk-css"><span>CSS</span></li>
+                        <li class="sk-htm"><span>HTML</span></li>
+                        <li class="sk-jav"><span>REACT JS & JS</span></li>
+                        <li class="sk-sql"><span>WORDPRESS</span></li>
+                     </ul>
                   </div>
                </div>
+            </div>
          </div>
 
          <div class="social-links">
@@ -141,7 +151,7 @@ if (!in_array($page, $valid_pages)) {
          </div>
       </div>
    </div>
-  
+
    <!-- Main  Content -->
    <div id="main-content" class="content" style="overflow-y:scroll!important; order:2;">
       <div id="backdrop-filtr" class="backdrop-filter">
@@ -150,10 +160,12 @@ if (!in_array($page, $valid_pages)) {
                <?php
                   // Include the PHP file corresponding to the selected page
                   include("pages/$page.php");
-               ?>
-            </div> 
+?>
+            </div>
          </div>
-     </div>   
+      </div>
+      <?php
+      include 'copyright.php'
+?>
    </div>
-
 </section>

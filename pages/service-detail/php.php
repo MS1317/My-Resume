@@ -10,5 +10,6 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
 <pre>
     <?php
         print_r($phpWebsites);
-    ?>
+?>
 </pre>
+
