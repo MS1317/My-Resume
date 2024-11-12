@@ -135,7 +135,7 @@ if (!in_array($page, $valid_pages)) {
                <div class="profile-skills">
                   <div>
                      <ul class="skills skills3 p-0 m-0">
-                        <li class="sk-css"><span>CSS</span></li>
+                        <li class="sk-css"><span>S</span></li>
                         <li class="sk-htm"><span>HTML</span></li>
                         <li class="sk-jav"><span>REACT JS & JS</span></li>
                         <li class="sk-sql"><span>WORDPRESS</span></li>
