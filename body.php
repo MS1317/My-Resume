@@ -12,7 +12,7 @@ if (!in_array($page, $valid_pages)) {
 ?>
 
 <section id="main">
-   
+
    <!-- Side Profile toggle -->
    <div class="side-navbar mw-100 d-flex justify-content-center align-items-start" style="order:1;">
       <span id="sideProfileBtn" class="side-profile-btn d-flex align-items-center" onclick="openSideProfile()"></span>
@@ -24,7 +24,7 @@ if (!in_array($page, $valid_pages)) {
          <div id="navBtn" class="openBtn" onclick="openNav()">&#9776;</div>
       </div>
       <div class="active-page">
-      <p></p>
+         <p></p>
       </div>
       <div id="mySidenav" class="sidenav" style="max-width: 0px; width: 0px;">
          <div class="sidebar-content">
@@ -49,7 +49,7 @@ if (!in_array($page, $valid_pages)) {
                onclick="loadContent('services/video-editing',event)">Video-Editing</a>
          </div>
       </div>
-   </div> 
+   </div>
 
    <!-- Side Profile -->
    <div id="side-profile-parent" class="side-profile-parent" style="order:1;">
@@ -68,6 +68,7 @@ if (!in_array($page, $valid_pages)) {
                      <li>Frontend Developer,</li>
                      <li>React JS,</li>
                      <li>Wordpress,</li>
+                     <li>Video Editor,</li><br>
                      <li>
                         <a class="channel-link" href="http://www.youtube.com/@TechiTuber">
                            <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span
@@ -164,8 +165,12 @@ if (!in_array($page, $valid_pages)) {
             </div>
          </div>
       </div>
+
       <?php
-      include 'copyright.php'
+         include 'contact-form.php'
+?>
+      <?php
+   include 'copyright.php'
 ?>
    </div>
 </section>
