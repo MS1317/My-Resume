@@ -70,7 +70,25 @@ hr {
 #page-changer.fade-out {
   opacity: 0;
 }
+/* ------------------------------------------------- Under Construction ---------------------------------------- */
+.c-backdrop:has(.under-construction){
+  background-image: unset;
+}
 
+.under-construction{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#main .mainContent:has(.under-construction){
+  overflow: visible;
+}
+
+.under-construction g{
+  filter: drop-shadow(2px 4px 6px black);
+}
 /*-------------------------------------------------- Preloader --------------------------------------------------*/
 
 :root {

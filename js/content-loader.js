@@ -92,6 +92,8 @@ function loadContent(page, event) {
 
           // Update the URL without causing a page refresh
           history.pushState({ page: page }, null, "?page=" + page);
+        
+          initializeLottiePlayer();
 
           // Update the active page dynamically
           var activePageLinks = document.querySelectorAll(".sidebar-content a");
@@ -155,3 +157,48 @@ function scrollToTop() {
   }, 500); // 500ms delay to ensure smooth scroll is completed
   setCopyrightYear();
 }
+
+function initializeLottiePlayer() {
+  // Create the script tag
+  const scriptTag = document.createElement("script");
+  scriptTag.type = "module";
+  scriptTag.src = "https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs";
+
+  // Wait for the script to load before initializing the animation
+  scriptTag.onload = function() {
+      // Create the Lottie player element after the script is loaded
+      const lottieContainer = document.createElement('div');
+      lottieContainer.classList.add('under-construction');
+      
+      const lottiePlayer = document.createElement('dotlottie-player');
+      lottiePlayer.setAttribute('src', 'https://lottie.host/d8537c42-ea85-4751-84f9-f46370d9cb9a/omG5vtMQY0.lottie');
+      lottiePlayer.setAttribute('background', 'transparent');
+      lottiePlayer.setAttribute('speed', '1');
+      lottiePlayer.setAttribute('style', 'max-width: 500px; max-height: 500px; width: 100%; height: 100%;');
+      lottiePlayer.setAttribute('loop', '');
+      lottiePlayer.setAttribute('autoplay', '');
+
+      const lottiePlaceholder =document.getElementById("construction-placeholder");
+
+      if(lottiePlaceholder){
+        lottieContainer.appendChild(lottiePlayer);
+        lottiePlaceholder.appendChild(lottieContainer);
+      }
+
+  };
+
+  // Append the script tag to the head
+  document.head.appendChild(scriptTag);
+}
+
+
+function showLottie(){
+  const queryParams=new URLSearchParams(window.location.search);
+  const page=queryParams.get("page");
+
+  if(page==="service-detail/php" || page==="service-detail/react" || page==="service-detail/wordpress"){
+    initializeLottiePlayer();
+  }
+}
+
+showLottie();

@@ -6,9 +6,6 @@ if (!defined('BASE_PATH')) {
 require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
 
 ?>
+<div id="construction-placeholder">
 
-<pre>
-    <?php
-        print_r($reactWebsites);
-    ?>
-</pre>
+</div>
