@@ -6,6 +6,7 @@ function openSideProfile() {
     document.getElementById("profile-cont").style.width="250px";
     document.getElementById("content").style.zIndex="-1";
     document.getElementById("backdrop-filtr").style.backgroundColor="rgba(30,30,40,.88)";
+    document.querySelector(".copyright-parent").style.backgroundColor="rgba(30,30,40,.88)";
 }
 
 function closeSideProfile(){
@@ -15,6 +16,7 @@ function closeSideProfile(){
     document.getElementById("profile-cont").style.width="0px";
     document.getElementById("content").style.zIndex="0";
     document.getElementById("backdrop-filtr").style.backgroundColor="unset";
+    document.querySelector(".copyright-parent").style.backgroundColor="unset";
 }
 
 function checkWidthAndClose() {

@@ -9,12 +9,14 @@ if (!defined('BASE_PATH')) {
         <h2>Choose the type of website you want to see</h2>
     </div> -->
     <div class="web-selector">
-    <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
-    <?php if (!empty($webTechnology)) {
-    foreach ($webTechnology as $technology): ?>
-        <a href="?page=service-detail/<?php echo $technology["web-link"]; ?>" onclick="loadContent('service-detail/<?php echo $technology["web-link"]; ?>', event)">
+        <?php require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php'; ?>
+        <?php if (!empty($webTechnology)) {
+            foreach ($webTechnology as $technology): ?>
+        <a href="?page=service-detail/<?php echo $technology["web-link"]; ?>"
+            onclick="loadContent('service-detail/<?php echo $technology["web-link"]; ?>', event)">
             <div class="web-card">
-                <div class="web-card-background" style="background-image:url('assets/web/<?php echo $technology["web-icon"]; ?>')">
+                <div class="web-card-background"
+                    style="background-image:url('assets/web/<?php echo $technology["web-icon"]; ?>')">
                     <div class="title-bg">
                         <div class="web-type">
                             <?php echo $technology["web-technology"];?>
@@ -23,11 +25,10 @@ if (!defined('BASE_PATH')) {
                 </div>
             </div>
         </a>
-    <?php endforeach;
-    }
-    else {
-        echo"No Data Found";
-    }
-    ?>
+        <?php endforeach;
+        } else {
+            echo"No Data Found";
+        }
+?>
     </div>
 </section>

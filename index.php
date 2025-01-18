@@ -9,7 +9,7 @@
     require("header.php");
 
     // Check if preloaderShown is true
-    if ($_COOKIE['preloaderShown'] === 'true') {
+    if (isset($_COOKIE['preloaderShown']) && $_COOKIE['preloaderShown'] === 'true') {
         // Only include body.php
         require("body.php");
     } else {

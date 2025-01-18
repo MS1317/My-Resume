@@ -12,7 +12,7 @@ if (!in_array($page, $valid_pages)) {
 ?>
 
 <section id="main">
-   
+
    <!-- Side Profile toggle -->
    <div class="side-navbar mw-100 d-flex justify-content-center align-items-start" style="order:1;">
       <span id="sideProfileBtn" class="side-profile-btn d-flex align-items-center" onclick="openSideProfile()"></span>
@@ -24,7 +24,7 @@ if (!in_array($page, $valid_pages)) {
          <div id="navBtn" class="openBtn" onclick="openNav()">&#9776;</div>
       </div>
       <div class="active-page">
-      <p></p>
+         <p></p>
       </div>
       <div id="mySidenav" class="sidenav" style="max-width: 0px; width: 0px;">
          <div class="sidebar-content">
@@ -36,12 +36,20 @@ if (!in_array($page, $valid_pages)) {
             <a href="#">Contact</a> -->
             <!-- <details>
                <summary>Services</summary>
-               <a href="?page=services/web" onclick="loadContent('services/web',event)">Web</a>
-               <a href="?page=services/video-editing" onclick="loadContent('services/video-editing',event)">Video Editing</a>
+               
             </details> -->
+            <div class="service wrapper">
+               <a class="service-drop" href="javascript:void(0)">Services</a>
+               <i class="fa-solid fa-caret-right"></i>
+            </div>
+
+            <a class="serv-item" href="?page=services/web" onclick="loadContent('services/web',event)">Web</a>
+
+            <a class="serv-item" href="?page=services/video-editing"
+               onclick="loadContent('services/video-editing',event)">Video-Editing</a>
          </div>
       </div>
-   </div> 
+   </div>
 
    <!-- Side Profile -->
    <div id="side-profile-parent" class="side-profile-parent" style="order:1;">
@@ -60,9 +68,12 @@ if (!in_array($page, $valid_pages)) {
                      <li>Frontend Developer,</li>
                      <li>React JS,</li>
                      <li>Wordpress,</li>
+                     <li>Video Editor,</li><br>
                      <li>
                         <a class="channel-link" href="http://www.youtube.com/@TechiTuber">
-                        <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong> CEO
+                           <strong><span style="color:white; -webkit-text-stroke: 0.5px black;">Techi</span><span
+                                 style="color:white; -webkit-text-stroke: 0.5px black; background-color:#f22b0c; border-radius:5px;padding:1px;">Tuber</span></strong>
+                           CEO
                         </a>
                      </li>
                   </ul>
@@ -71,68 +82,68 @@ if (!in_array($page, $valid_pages)) {
          </div>
 
          <div class="sidebar-scrollable-menu">
-               <div id="sideDetails2" class="side-details-2 pt-3 px-3">
-                  <table>
-                     <tr>
-                        <td class="details-head">
-                           Residence:
-                        </td>
-                        <td class="details-data">
-                           India
-                        </td>
-                     </tr>
-                     <tr>
-                        <td   class="details-head">
-                           City:
-                        </td>
-                        <td class="details-data">
-                           Ludhiana
-                        </td>
-                     </tr>
-                     <tr>
-                        <td   class="details-head">
-                           Age:
-                        </td>
-                        <td class="details-data">
-                           23
-                        </td>
-                     </tr>
-                  </table>
+            <div id="sideDetails2" class="side-details-2 pt-3 px-3">
+               <table>
+                  <tr>
+                     <td class="details-head">
+                        Residence:
+                     </td>
+                     <td class="details-data">
+                        India
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="details-head">
+                        City:
+                     </td>
+                     <td class="details-data">
+                        Ludhiana
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="details-head">
+                        Age:
+                     </td>
+                     <td class="details-data">
+                        23
+                     </td>
+                  </tr>
+               </table>
+            </div>
+
+            <hr>
+
+            <div class="progrss-div d-flex justify-content-evenly">
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="100" max="100" text-format='percent'></circle-progress>
+                  <h6 class="text-center">Punjabi</h6>
                </div>
 
-                  <hr>
-
-               <div class="progrss-div d-flex justify-content-evenly">  
-                  <div class="lang-prog">
-                     <circle-progress class="circle" value="100" max="100" 	text-format='percent'></circle-progress>
-                     <h6 class="text-center">Punjabi</h6>
-                  </div>
-
-                  <div class="lang-prog">
-                     <circle-progress class="circle" value="60" max="100" 	text-format='percent'></circle-progress>
-                     <h6 class="text-center">Hindi</h6>
-                  </div>
-               
-                  <div class="lang-prog">
-                     <circle-progress class="circle" value="80" max="100" 	text-format='percent'></circle-progress>
-                     <h6 class="text-center">English</h6>
-                  </div>
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="60" max="100" text-format='percent'></circle-progress>
+                  <h6 class="text-center">Hindi</h6>
                </div>
 
-                  <hr>
+               <div class="lang-prog">
+                  <circle-progress class="circle" value="80" max="100" text-format='percent'></circle-progress>
+                  <h6 class="text-center">English</h6>
+               </div>
+            </div>
 
-               <div class="content">
-                  <div class="profile-skills">
-                     <div>
-                           <ul class="skills skills3 p-0 m-0">
-                              <li class="sk-css"><span>CSS</span></li>
-                              <li class="sk-htm"><span>HTML</span></li>
-                              <li class="sk-jav"><span>REACT JS & JS</span></li>
-                              <li class="sk-sql"><span>WORDPRESS</span></li>
-                           </ul>
-                     </div>
+            <hr>
+
+            <div class="content">
+               <div class="profile-skills">
+                  <div>
+                     <ul class="skills skills3 p-0 m-0">
+                        <li class="sk-css"><span>CSS</span></li>
+                        <li class="sk-htm"><span>HTML</span></li>
+                        <li class="sk-jav"><span>REACT JS & JS</span></li>
+                        <li class="sk-sql"><span>WORDPRESS</span></li>
+                     </ul>
                   </div>
                </div>
+            </div>
          </div>
 
          <div class="social-links">
@@ -141,7 +152,7 @@ if (!in_array($page, $valid_pages)) {
          </div>
       </div>
    </div>
-  
+
    <!-- Main  Content -->
    <div id="main-content" class="content" style="overflow-y:scroll!important; order:2;">
       <div id="backdrop-filtr" class="backdrop-filter">
@@ -184,7 +195,13 @@ if (!in_array($page, $valid_pages)) {
 ?>
             </div>
          </div>
-     </div>   
-   </div>
+      </div>
 
+      <?php
+         include 'contact-form.php'
+?>
+      <?php
+   include 'copyright.php'
+?>
+   </div>
 </section>

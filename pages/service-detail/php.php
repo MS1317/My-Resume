@@ -5,10 +5,15 @@ if (!defined('BASE_PATH')) {
 }
 require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
 
+
 ?>
 
 <pre>
-    <?php
-        print_r($phpWebsites);
-    ?>
+<?php
+var_dump($webTechnology);
+?>
 </pre>
+
+<div id="construction-placeholder">
+
+</div>
