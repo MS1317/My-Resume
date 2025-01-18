@@ -1,14 +1,15 @@
-window.onload = function() {
-    // Get the initial page from the URL query parameter
-    var queryParams = new URLSearchParams(window.location.search);
-    // console.log(queryParams,"Query Params")
+window.onload = function () {
+  // Get the initial page from the URL query parameter
+  var queryParams = new URLSearchParams(window.location.search);
+  console.log(queryParams,"Query Params")
 
     var initialPage = queryParams.get('page');
     // console.log(initialPage,"Initial Page")
 
-    // If initialPage is not null, set it as the active page name
-    if (initialPage) {
-        // console.log("Initial Page is available");
+  // If initialPage is not null, set it as the active page name
+  if (initialPage) {
+
+    console.log("Initial Page is available");
 
           // Display active page name in active-page class
           var pageParts=initialPage.split('/');

@@ -1,5 +1,6 @@
 <?php
     require "config.php";
+
     require("db.php");
     // Set the cookie if it's not already set
     if (!isset($_COOKIE['preloaderShown'])) {

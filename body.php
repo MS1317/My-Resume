@@ -149,9 +149,40 @@ if (!in_array($page, $valid_pages)) {
             <div id="page-changer" class="c-backdrop">
                <?php
                   // Include the PHP file corresponding to the selected page
-                  include("pages/$page.php");
-               ?>
-            </div> 
+
+                  if (isset($_GET['page'])) {
+                     // Extract the requested page from the URL
+                     $page = isset($_GET['page'])? $_GET['page'] : null;
+             
+                     // Define the directory where your page files are stored
+                     $pagesDirectory=__DIR__.'/pages/';
+             
+                     // Construct the file path
+                     $pagePath=$pagesDirectory . $page . '.php';
+             
+                     // Check if the requested file exists
+                     if ($page && file_exists($pagePath)) {
+                         // Load the requested page
+                         include("pages/$page.php");
+                        }else {
+                           // If the file does not exist, include the 404 page
+                           include($pagesDirectory.'404.php');
+                        
+                           //  Send a 404 Status Code
+                           http_response_code(404);
+                        
+                           //  Update the url to indicate its a 404 page
+                           $currentUrl=$_SERVER['REQUEST_URI'];
+                           $cleanedUrl = preg_replace('/\?.*/', '', $currentUrl); // Remove query string
+                           header("Location: $cleanedUrl?error=404");
+                        }
+                 }
+                 else {
+                     // If no page is requested, load the home page
+                     include("pages/home.php");
+                 }
+?>
+            </div>
          </div>
      </div>   
    </div>
