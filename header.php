@@ -10,7 +10,7 @@ if (!defined('BASE_PATH')) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <meta property="og:image" content="<?php echo BASE_PATH . '/assets/preview-image.png'; ?>" />
+    <meta property="og:image" content="https://mscv.techituber.com/assets/preview-image.png" />
     <title>MSCV</title>
 
     <!-- Custom CSS -->
