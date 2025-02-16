@@ -3,12 +3,18 @@
 </IfModule>
 
 # Redirect 404 errors to the custom 404 page
-ErrorDocument 404 /mscv/index.php?page=404
+ErrorDocument 404 /index.php?page=404
 
 RewriteEngine On
-RewriteBase /mscv/
+
+<If "%{HTTP_HOST} == 'localhost'">
+    RewriteBase /mscv/
+</If>
+<Else>
+    RewriteBase /
+</Else>
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /mscv/?page=$1 [R=301,QSA,L]
+RewriteRule ^(.*)$ index.php?page=$1 [R=301,QSA,L]
 
