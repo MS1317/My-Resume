@@ -2,19 +2,12 @@
     Header set Permissions-Policy "autoplay=(self), fullscreen=(self)"
 </IfModule>
 
-# Redirect 404 errors to the custom 404 page
-ErrorDocument 404 /index.php?page=404
-
 RewriteEngine On
 
-<If "%{HTTP_HOST} == 'localhost'">
-    RewriteBase /mscv/
-</If>
-<Else>
-    RewriteBase /
-</Else>
-
+# Redirect all requests to index.php with page query param (clean URL handling)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?page=$1 [R=301,QSA,L]
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
 
+# Optional: Add a custom 404 handler if you want Apache itself to trigger it (but this can now be PHP's job too)
+ErrorDocument 404 /index.php?page=404
