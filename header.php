@@ -1,9 +1,16 @@
+<?php
+// Ensure config.php is included either directly or via index.php
+if (!defined('BASE_PATH')) {
+    require('config.php');  // Adjust the path as needed based on your directory structure
+}
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta property="og:image" content="https://mscv.techituber.com/assets/preview-image.png" />
     <title>MSCV</title>
 
     <!-- Custom CSS -->

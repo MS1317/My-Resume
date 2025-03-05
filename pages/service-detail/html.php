@@ -56,6 +56,7 @@ require $_SERVER['DOCUMENT_ROOT'] . BASE_PATH . '/fetch_data.php';
                         <div class="web-bg-cover pulse"
                             style="background-image:url('assets/web/websites/<?php echo $htmlWebsite['web_img']; ?>');">
                         </div>
+                    </div>
                 </dialog>
             </div>
         </div>

@@ -8,6 +8,14 @@
     }
     require("header.php");
 
+    $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
+    if ($page == '404') {
+        // Include the custom 404 page content
+        include '404.php';
+        exit;
+    }
+
     // Check if preloaderShown is true
     if (isset($_COOKIE['preloaderShown']) && $_COOKIE['preloaderShown'] === 'true') {
         // Only include body.php
